@@ -54,3 +54,39 @@ body {
     color: green;
     font-size: 180%;
 }
+
+#name-outer {
+    height: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#enter-name{
+    height: 50%;
+    width: 50%;
+    border: 3px solid green;
+}
+
+#username {
+
+}
+
+#username-label {
+
+}
+
+#username:focus {
+outline: 3px solid green;
+}
+
+#name-button {
+
+}
+
+#name-display{
+    color: red;
+    background-color: blue;
+}
