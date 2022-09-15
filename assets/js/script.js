@@ -1,5 +1,7 @@
 document.getElementById("name-button").addEventListener("click", function () {
     let inputName = document.getElementById("username").value;
+    let element = document.getElementById("quiz-outer");
+    element.scrollIntoView();
     document.getElementById("name-display").innerHTML = `<h2>Go ${inputName}!</h2>`
 })
 
