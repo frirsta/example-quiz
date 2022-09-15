@@ -25,6 +25,32 @@ body {
     color: aqua;
 }
 
+#hero-outer{
+    height: 700px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#hero-image {
+    background: url("../images/hero.png") no-repeat;
+    width: 50%;
+    height: 700px;
+}
+
+#hero-text {
+    text-align: end;
+    line-height: 2;
+}
+
 #start-quiz{
-    
+    height: 50px;
+    width: 50px;
+    border: 3px solid green;
+    color: green;
+    font-size: 180%;
 }
