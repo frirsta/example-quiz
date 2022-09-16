@@ -43,14 +43,16 @@
         <div id="quiz-outer">
             <div id="quiz-container">
                 <div>
+                    <div id="question-area">TEXT</div>
                     <img id="flag-image" onclick="startQuiz()">
-                <div id="question-area">TEXT</div>
                 <input type="text" id="user-answer">
-                <button id="submit-button" type="button">Submit Answer</button>
+                <button onclick="userAnswer()" id="submit-button">Submit Answer</button>
             </div>
         </div>
         <div id="name-display"></div>
         <div id="score-container">
+            <span id="flag-result"></span>
+            <span id="correct-answer"></span>
             <p class="scores">Correct Answer: <span id="correct">0</span></p>
             <p class="scores">Incorrect Answer: <span id="incorrect">0</span></p>
         </div>

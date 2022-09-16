@@ -16,8 +16,6 @@ function displayQuestion() {
 
 }
 
-function checkAnswer() {}
-
 function correctScore() {}
 
 function incorrectScore() {}
@@ -1255,5 +1253,21 @@ const flagData = {
 function startQuiz() {
     flagData.flag = Math.floor(Math.random() * flagData.pair.length);
     document.getElementById("flag-image").src = "https://flagcdn.com/w640/" + flagData.pair[flagData.flag].imgCode + ".png";
+    document.getElementById("correct-answer").textContent = flagData.pair[flagData.flag].country;
 }
 startQuiz();
+
+function userAnswer() {
+
+
+    let inputAnswer = document.getElementById("user-answer").value.toLowerCase();
+
+    if (inputAnswer == flagData.pair[flagData.flag].country.toLowerCase()) {
+        alert("correct");
+
+    } else {
+        alert("incorrect");
+    }
+}
+
+let submitButton = document.getElementById("submit-button");
