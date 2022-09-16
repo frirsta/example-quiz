@@ -1249,13 +1249,17 @@ const flagData = {
     ]
 };
 
-
+let flagResult = "";
 function startQuiz() {
     flagData.flag = Math.floor(Math.random() * flagData.pair.length);
     document.getElementById("flag-image").src = "https://flagcdn.com/w640/" + flagData.pair[flagData.flag].imgCode + ".png";
-    document.getElementById("correct-answer").textContent = flagData.pair[flagData.flag].country;
+    flagResult = document.getElementById("correct-answer").textContent = flagData.pair[flagData.flag].country;
 }
 startQuiz();
+console.log(flagResult);
+
+let correct = 0;
+let incorrect = 0;
 
 function userAnswer() {
 
@@ -1263,11 +1267,35 @@ function userAnswer() {
     let inputAnswer = document.getElementById("user-answer").value.toLowerCase();
 
     if (inputAnswer == flagData.pair[flagData.flag].country.toLowerCase()) {
-        alert("correct");
-
+        alert(`${inputAnswer} is the correct answer!`);
+        addPoint();
     } else {
-        alert("incorrect");
+        alert(`Your guess ${inputAnswer} is incorrect, the correct answer is ${flagResult}`);
+        addIncorrectPoint();
+
     }
 }
 
-let submitButton = document.getElementById("submit-button");
+
+/**  
+* get score from DOM and add point to correct score  
+*/
+function addPoint() {
+    let score = document.getElementById("correct").innerText;
+    document.getElementById("correct").innerText = ++score;
+}
+
+/**  
+* get incorrect score from DOM and add point to incorrect score
+*/
+function addIncorrectPoint() {
+    let score = document.getElementById("incorrect").innerText;
+    document.getElementById("incorrect").innerText = ++score;
+}
+
+
+
+
+// let submitButton = document.getElementById("submit-button");
+
+// let correctPoint = document.getElementById("correct").innerText = correct;
