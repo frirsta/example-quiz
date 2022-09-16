@@ -1258,9 +1258,6 @@ function startQuiz() {
 startQuiz();
 console.log(flagResult);
 
-let correct = 0;
-let incorrect = 0;
-
 function userAnswer() {
 
 
