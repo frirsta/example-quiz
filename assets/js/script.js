@@ -16,11 +16,12 @@ document.getElementById("name-button").addEventListener("click", function () {
 
 });
 
+
 /**
  * All flags name of country and letters to add to image
  * link for it to show that specific country's flag  
  */
-const flagData = {
+ const flagData = {
     flag: 0,
     pair: [{
             imgCode: "ad",
@@ -297,10 +298,6 @@ const flagData = {
         {
             imgCode: "et",
             country: "Ethiopia"
-        },
-        {
-            imgCode: "eu",
-            country: "European Union"
         },
         {
             imgCode: "fi",
@@ -970,213 +967,10 @@ const flagData = {
             imgCode: "um",
             country: "United States Minor Outlying Islands"
         },
-        {
-            imgCode: "un",
-            country: "United Nations"
-        },
+
         {
             imgCode: "us",
             country: "United States"
-        },
-        {
-            imgCode: "us-ak",
-            country: "Alaska"
-        },
-        {
-            imgCode: "us-al",
-            country: "Alabama"
-        },
-        {
-            imgCode: "us-ar",
-            country: "Arkansas"
-        },
-        {
-            imgCode: "us-az",
-            country: "Arizona"
-        },
-        {
-            imgCode: "us-ca",
-            country: "California"
-        },
-        {
-            imgCode: "us-co",
-            country: "Colorado"
-        },
-        {
-            imgCode: "us-ct",
-            country: "Connecticut"
-        },
-        {
-            imgCode: "us-de",
-            country: "Delaware"
-        },
-        {
-            imgCode: "us-fl",
-            country: "Florida"
-        },
-        {
-            imgCode: "us-ga",
-            country: "Georgia"
-        },
-        {
-            imgCode: "us-hi",
-            country: "Hawaii"
-        },
-        {
-            imgCode: "us-ia",
-            country: "Iowa"
-        },
-        {
-            imgCode: "us-id",
-            country: "Idaho"
-        },
-        {
-            imgCode: "us-il",
-            country: "Illinois"
-        },
-        {
-            imgCode: "us-in",
-            country: "Indiana"
-        },
-        {
-            imgCode: "us-ks",
-            country: "Kansas"
-        },
-        {
-            imgCode: "us-ky",
-            country: "Kentucky"
-        },
-        {
-            imgCode: "us-la",
-            country: "Louisiana"
-        },
-        {
-            imgCode: "us-ma",
-            country: "Massachusetts"
-        },
-        {
-            imgCode: "us-md",
-            country: "Maryland"
-        },
-        {
-            imgCode: "us-me",
-            country: "Maine"
-        },
-        {
-            imgCode: "us-mi",
-            country: "Michigan"
-        },
-        {
-            imgCode: "us-mn",
-            country: "Minnesota"
-        },
-        {
-            imgCode: "us-mo",
-            country: "Missouri"
-        },
-        {
-            imgCode: "us-ms",
-            country: "Mississippi"
-        },
-        {
-            imgCode: "us-mt",
-            country: "Montana"
-        },
-        {
-            imgCode: "us-nc",
-            country: "North Carolina"
-        },
-        {
-            imgCode: "us-nd",
-            country: "North Dakota"
-        },
-        {
-            imgCode: "us-ne",
-            country: "Nebraska"
-        },
-        {
-            imgCode: "us-nh",
-            country: "New Hampshire"
-        },
-        {
-            imgCode: "us-nj",
-            country: "New Jersey"
-        },
-        {
-            imgCode: "us-nm",
-            country: "New Mexico"
-        },
-        {
-            imgCode: "us-nv",
-            country: "Nevada"
-        },
-        {
-            imgCode: "us-ny",
-            country: "New York"
-        },
-        {
-            imgCode: "us-oh",
-            country: "Ohio"
-        },
-        {
-            imgCode: "us-ok",
-            country: "Oklahoma"
-        },
-        {
-            imgCode: "us-or",
-            country: "Oregon"
-        },
-        {
-            imgCode: "us-pa",
-            country: "Pennsylvania"
-        },
-        {
-            imgCode: "us-ri",
-            country: "Rhode Island"
-        },
-        {
-            imgCode: "us-sc",
-            country: "South Carolina"
-        },
-        {
-            imgCode: "us-sd",
-            country: "South Dakota"
-        },
-        {
-            imgCode: "us-tn",
-            country: "Tennessee"
-        },
-        {
-            imgCode: "us-tx",
-            country: "Texas"
-        },
-        {
-            imgCode: "us-ut",
-            country: "Utah"
-        },
-        {
-            imgCode: "us-va",
-            country: "Virginia"
-        },
-        {
-            imgCode: "us-vt",
-            country: "Vermont"
-        },
-        {
-            imgCode: "us-wa",
-            country: "Washington"
-        },
-        {
-            imgCode: "us-wi",
-            country: "Wisconsin"
-        },
-        {
-            imgCode: "us-wv",
-            country: "West Virginia"
-        },
-        {
-            imgCode: "us-wy",
-            country: "Wyoming"
         },
         {
             imgCode: "uy",
@@ -1248,7 +1042,6 @@ const flagData = {
         }
     ]
 };
-
 
 let flagResult = "";
 /**
