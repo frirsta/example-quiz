@@ -1294,3 +1294,10 @@ function addIncorrectPoint() {
     let score = document.getElementById("incorrect").innerText;
     document.getElementById("incorrect").innerText = ++score;
 }
+
+/**
+ * when page is refreshed it starts from the top of the page
+ */
+window.onload = function() {
+    scrollTo(0, 0)
+}
