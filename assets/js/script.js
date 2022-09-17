@@ -1,9 +1,21 @@
+/**
+ * Gets users name and displays it on screen
+ * it also alerts if name is not written
+ */
 document.getElementById("name-button").addEventListener("click", function () {
     let inputName = document.getElementById("username").value;
     let element = document.getElementById("quiz-outer");
-    element.scrollIntoView();
-    document.getElementById("name-display").innerHTML = `<h2>Go ${inputName}!</h2>`
+
+    if (inputName === "") {
+        alert("Enter your name!")
+    } else {
+        element.scrollIntoView();
+        document.getElementById("name-display").innerHTML = `<h2>Go ${inputName}!</h2>`
+
+    }
+
 });
+
 /**
  * All flags name of country and letters to add to image
  * link for it to show that specific country's flag  
@@ -1237,16 +1249,21 @@ const flagData = {
     ]
 };
 
+
 let flagResult = "";
 /**
  * Get random flag from flagData to be displayed on page for quiz
  */
 function startQuiz() {
+    document.getElementById("user-answer").value = "";
+    document.getElementById("user-answer").focus();
     flagData.flag = Math.floor(Math.random() * flagData.pair.length);
     document.getElementById("flag-image").src = "https://flagcdn.com/w640/" + flagData.pair[flagData.flag].imgCode + ".png";
     flagResult = document.getElementById("correct-answer").textContent = flagData.pair[flagData.flag].country;
 }
 startQuiz();
+
+
 /**
  * Get answer written by user and check if its correct,
  * shows alert if answer is correct and incorrect and
