@@ -3,23 +3,11 @@ document.getElementById("name-button").addEventListener("click", function () {
     let element = document.getElementById("quiz-outer");
     element.scrollIntoView();
     document.getElementById("name-display").innerHTML = `<h2>Go ${inputName}!</h2>`
-})
-
-
-//flags data 
-
-
-// game function
-
-
-function displayQuestion() {
-
-}
-
-function correctScore() {}
-
-function incorrectScore() {}
-
+});
+/**
+ * All flags name of country and letters to add to image
+ * link for it to show that specific country's flag  
+ */
 const flagData = {
     flag: 0,
     pair: [{
@@ -1249,42 +1237,32 @@ const flagData = {
     ]
 };
 
-
 let flagResult = "";
 /**
  * Get random flag from flagData to be displayed on page for quiz
  */
 function startQuiz() {
-   
     flagData.flag = Math.floor(Math.random() * flagData.pair.length);
     document.getElementById("flag-image").src = "https://flagcdn.com/w640/" + flagData.pair[flagData.flag].imgCode + ".png";
     flagResult = document.getElementById("correct-answer").textContent = flagData.pair[flagData.flag].country;
 }
 startQuiz();
-
-
 /**
  * Get answer written by user and check if its correct,
  * shows alert if answer is correct and incorrect and
  * after the alert a new flag will display.
  */
 function userAnswer() {
-
-
     let inputAnswer = document.getElementById("user-answer").value.toLowerCase();
-
     if (inputAnswer == flagData.pair[flagData.flag].country.toLowerCase()) {
         alert(`${inputAnswer} is the correct answer!`);
         addPoint();
     } else {
         alert(`Your guess ${inputAnswer} is incorrect, the correct answer is ${flagResult}`);
         addIncorrectPoint();
-
     }
     startQuiz();
 }
-
-
 /**  
  * Get score from DOM and add point to correct score.  
  */
@@ -1292,7 +1270,6 @@ function addPoint() {
     let score = document.getElementById("correct").innerText;
     document.getElementById("correct").innerText = ++score;
 }
-
 /**  
  * Get incorrect score from DOM and add point to incorrect score.
  */
@@ -1300,4 +1277,3 @@ function addIncorrectPoint() {
     let score = document.getElementById("incorrect").innerText;
     document.getElementById("incorrect").innerText = ++score;
 }
-
