@@ -105,6 +105,7 @@ body {
     width: 50%;
     border: 3px solid green;
 }
+
 #question-area {}
 
 #flag-image {
@@ -114,7 +115,7 @@ body {
 
 #user-answer {
     border: 5px solid green;
-  
+
 }
 
 #submit-button {
@@ -122,8 +123,13 @@ body {
 }
 
 #name-display {}
-#score-container{}
-#flag-result{}
-.scores{}
-#correct{}
-#incorrect{}
+
+#score-container {}
+
+#flag-result {}
+
+.scores {}
+
+#correct {}
+
+#incorrect {}

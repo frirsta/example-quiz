@@ -1249,15 +1249,25 @@ const flagData = {
     ]
 };
 
+
 let flagResult = "";
+/**
+ * Get random flag from flagData to be displayed on page for quiz
+ */
 function startQuiz() {
+   
     flagData.flag = Math.floor(Math.random() * flagData.pair.length);
     document.getElementById("flag-image").src = "https://flagcdn.com/w640/" + flagData.pair[flagData.flag].imgCode + ".png";
     flagResult = document.getElementById("correct-answer").textContent = flagData.pair[flagData.flag].country;
 }
 startQuiz();
-console.log(flagResult);
 
+
+/**
+ * Get answer written by user and check if its correct,
+ * shows alert if answer is correct and incorrect and
+ * after the alert a new flag will display.
+ */
 function userAnswer() {
 
 
@@ -1271,28 +1281,23 @@ function userAnswer() {
         addIncorrectPoint();
 
     }
+    startQuiz();
 }
 
 
 /**  
-* get score from DOM and add point to correct score  
-*/
+ * Get score from DOM and add point to correct score.  
+ */
 function addPoint() {
     let score = document.getElementById("correct").innerText;
     document.getElementById("correct").innerText = ++score;
 }
 
 /**  
-* get incorrect score from DOM and add point to incorrect score
-*/
+ * Get incorrect score from DOM and add point to incorrect score.
+ */
 function addIncorrectPoint() {
     let score = document.getElementById("incorrect").innerText;
     document.getElementById("incorrect").innerText = ++score;
 }
 
-
-
-
-// let submitButton = document.getElementById("submit-button");
-
-// let correctPoint = document.getElementById("correct").innerText = correct;
