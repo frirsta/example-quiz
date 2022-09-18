@@ -223,3 +223,51 @@ h3 {
     width: 50%;
     margin-top: 5%;
 }
+
+/* For screens 1200px wide and wider */
+@media screen and (min-width: 1200px) {}
+
+/* For screens 992px wide and wider */
+@media screen and (min-width: 1200px) {}
+
+/* For screens 768px wide and wider */
+@media screen and (min-width: 768px) {
+    #logo {
+        font-size: 250%;
+        margin-left: 1%;
+        margin-top: unset;
+    }
+
+    #hero-outer {
+        justify-content: unset;
+    }
+}
+
+/* For screens 600px wide and wider */
+@media screen and (min-width: 600px) {}
+
+@media screen and (max-width: 600px) {
+    h2, h3{
+        font-size: 60%;
+    }
+    #logo {
+        font-size: 150%;
+        margin-left: 1%;
+        margin-top: unset;
+    }
+    
+    #hero-image {
+        background: url("../images/hero-small.png") no-repeat;
+        width: 50%;
+        height: 700px;
+    
+    }
+    #hero-outer {
+        justify-content: unset;
+    }
+
+        #hero-text {
+            width: 80%;
+            bottom: 35%;
+        }
+}
