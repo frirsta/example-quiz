@@ -5,52 +5,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Flag quiz. A quiz in which you see a flag and need to write to which country it belongs.">
+    <meta name="description"
+        content="Flag quiz. A quiz in which you see a flag and need to write to which country it belongs.">
     <meta name="keywords" content="flag quiz, quiz, world flags, all countries flags, challenging quiz">
     <link type="image/png" sizes="16x16" rel="icon" href="/favicon.ico">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/215e1e67e2.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
 <body>
     <header>
-        <a href="index.html" aria-label="Go to our contact page">
-            <h1 id="logo">Guess The Flag</h1>
+        <a class="logo" href="index.html" aria-label="Go to our contact page">
+            <h1 class="logo" id="logo">Guess The Flag</h1>
         </a>
     </header>
     <section>
         <div id="hero-outer">
-            <div id="hero-image" aria-label="An animation of the planet"></div>
+            <div id="hero-image"></div>
             <div id="hero-text">
                 <h2>How many flags of the world do you know? <br>
                     Test your skills with the Guess The Flag Quiz</h2>
-                
-                <button type="button" id="start-quiz" onclick="" aria-label="Go to enter name page to start the quiz">Start Quiz</button>
+
+                <button class="button" type="button" id="start-quiz" onclick=""
+                    aria-label="Go to enter name page to start the quiz">Start Quiz</button>
             </div>
         </div>
     </section>
     <section>
+        <h2>Name area</h2>
         <div id="name-outer">
             <div id="enter-name">
-                <h3>Name area</h3>
-                <label id="username-label" for="username">Enter name here!</label>
-                <input type="text" name="username" id="username">
-                <form action="quiz-outer" method="get">
-                    <button type="button" id="name-button" aria-label="Submit name and start the quiz">Enter Name</button>
-                </form>
+                <label class="labels" id="username-label" for="username">Enter name here!</label>
+                <input class="input" type="text" name="username" id="username">
+                <button class="button" type="button" id="name-button" aria-label="Submit name and start the quiz">Enter
+                    Name</button>
+
             </div>
         </div>
     </section>
     <section>
+        <h2>Flag Quiz</h2>
         <div id="quiz-outer">
             <div id="quiz-container">
-                <div>
-                    <div id="question-area">TEXT</div>
-                    <img id="flag-image" alt="A countries flag. Once your answer is submitted another flag will display.">
-                    <input type="text" id="user-answer">
-                    <button onclick="userAnswer()" id="submit-button" aria-label="Submit the answer to see if it is correct or incorrect">Submit Answer</button>
+                    <h3 id="question-area">WHAT COUNTRY DOES THIS FLAG BELONG TO?</h3>
+                    <img id="flag-image" src="https://flagcdn.com/w640/sv.png"
+                        alt="A countries flag. Once your answer is submitted another flag will display.">
+                    <label class="labels" for="user-answer">Enter Answer</label>
+                    <input class="input" type="text" id="user-answer">
+                    <button class="button" onclick="userAnswer()" id="submit-button"
+                        aria-label="Submit the answer to see if it is correct or incorrect">Submit Answer</button>
                 </div>
-            </div>
+            
             <div id="name-display"></div>
             <div id="score-container">
                 <span id="flag-result"></span>
@@ -58,10 +64,18 @@
                 <p class="scores">Correct Answer: <span id="correct"></span></p>
                 <p class="scores">Incorrect Answer: <span id="incorrect"></span></p>
             </div>
+        </div>
     </section>
     <footer>
         footer area
-        favicon <a target="_blank" href="https://icons8.com/icon/63766/globe">Globe</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+        favicon <a target="_blank" href="https://icons8.com/icon/63766/globe">Globe</a> icon by <a target="_blank"
+            href="https://icons8.com">Icons8</a>
+        <ul>
+            <li><a href="https://www.instagram.com/" aria-label="Visit our instagram page (opens in a new tab)" rel="noopener" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.twitter.com/" aria-label="Visit our twitter page (opens in a new tab)" rel="noopener" target="_blank"></a><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://www.youtube.com/" aria-label="Visit our youtube page (opens in a new tab)" rel="noopener" target="_blank"></a><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="https://www.facebook.com/" aria-label="Visit our facebook page (opens in a new tab)" rel="noopener" target="_blank"></a><i class="fa-brands fa-facebook"></i></a></li>
+        </ul>
     </footer>
     <script src="assets/js/script.js"></script>
 </body>

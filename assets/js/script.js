@@ -2,8 +2,8 @@
  * when page is refreshed it starts from the top of the page
  */
 window.onload = function () {
-    scrollTo(0, 0)
-}
+    scrollTo(0, 0);
+};
 
 /**
  * send viewer to name input area
@@ -28,12 +28,12 @@ document.getElementById("name-button").addEventListener("click", function () {
     let element = document.getElementById("quiz-outer");
 
     if (inputName === "") {
-        alert("Enter your name!")
+        alert("Enter your name!");
     } else {
         document.getElementById("user-answer").value = "";
         document.getElementById("user-answer").focus();
         element.scrollIntoView();
-        document.getElementById("name-display").innerHTML = `<h2>Go ${inputName}!</h2>`
+        document.getElementById("name-display").innerHTML = `<h2>Go ${inputName}!</h2>`;
 
     }
 
@@ -1089,19 +1089,23 @@ startQuiz();
  */
 function userAnswer() {
     let inputAnswer = document.getElementById("user-answer").value.toLowerCase();
+    let inputArea = document.getElementById("user-answer");
     if (inputAnswer === "") {
-        alert("You have to write your guess before moving on to the next flag")
+        alert("You have to write your guess before moving on to the next flag");
     } else if (inputAnswer == flagData.pair[flagData.flag].country.toLowerCase()) {
 
         alert(`${inputAnswer} is the correct answer!`);
         addPoint();
         startQuiz();
+
     } else {
 
         alert(`Your guess ${inputAnswer} is incorrect, the correct answer is ${flagResult}`);
         addIncorrectPoint();
         startQuiz();
+
     }
+    inputArea.value = "";
 
 }
 /**  
