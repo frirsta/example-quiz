@@ -72,7 +72,7 @@ h3 {
     text-align: center;
     width: 40%;
     position: relative;
-    bottom: 5%;
+    bottom: 10%;
 }
 
 #start-quiz {
@@ -120,6 +120,7 @@ h3 {
 .labels {
     font-size: 150%;
     margin: 2% 0;
+    letter-spacing: 3px;
 }
 
 .input {
@@ -146,12 +147,14 @@ h3 {
     width: 25%;
     height: 20%;
     position: absolute;
+    margin-top: 5%;
 }
 
 /* Quiz outer */
 #flag-quiz h2 {
-text-align: center;
+    text-align: center;
 }
+
 #quiz-outer {
     width: 100%;
     display: flex;
@@ -159,6 +162,7 @@ text-align: center;
 
     align-items: center;
     font-size: 100%;
+    margin-top: 3%;
 }
 
 #quiz-container {
@@ -180,7 +184,7 @@ text-align: center;
 
 
 #user-answer {
-    height: 7%;
+    padding: 1%;
 }
 
 #submit-button {}
