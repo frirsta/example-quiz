@@ -1,6 +1,6 @@
 # Flag Quiz #
 
-Flag quiz is a site that challenges peoples flag skills as well as teaches them what flag belongs to what countries in a fun way. The quiz has all 254 countrys flags. Therefore, this is an advanced quiz. The website will be targeted by students who have to learn what country all flags belong to and those who are looking to challenge their flag skills.
+Flag quiz is a site that challenges peoples flag skills as well as teaches them what flag belongs to what countries in a fun way. The quiz has all 254 countries flags. Therefore, this is an advanced quiz. The website will be targeted by students who have to learn what country all flags belong to and those who are looking to challenge their flag skills.
 
 ---
 
