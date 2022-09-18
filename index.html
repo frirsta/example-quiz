@@ -46,32 +46,36 @@
     </section>
     <section>
         <h2>Flag Quiz</h2>
+        <div id="score-display"> 
+        <div id="name-display"></div>
+        <div id="score-container">
+            <span id="flag-result"></span>
+            <span id="correct-answer"></span>
+            <p class="scores">Correct Answer: <span id="correct"></span></p>
+            <p class="scores">Incorrect Answer: <span id="incorrect"></span></p>
+        </div></div>
         <div id="quiz-outer">
             <div id="quiz-container">
-                    <h3 id="question-area">WHAT COUNTRY DOES THIS FLAG BELONG TO?</h3>
-                    <img id="flag-image" src="https://flagcdn.com/w640/sv.png"
-                        alt="A countries flag. Once your answer is submitted another flag will display.">
-                    <label class="labels" for="user-answer">Enter Answer</label>
-                    <input class="input" type="text" id="user-answer">
-                    <button class="button" onclick="userAnswer()" id="submit-button"
-                        aria-label="Submit the answer to see if it is correct or incorrect">Submit Answer</button>
-                </div>
-            
-            <div id="name-display"></div>
-            <div id="score-container">
-                <span id="flag-result"></span>
-                <span id="correct-answer"></span>
-                <p class="scores">Correct Answer: <span id="correct"></span></p>
-                <p class="scores">Incorrect Answer: <span id="incorrect"></span></p>
+                <h3 id="question-area">WHAT COUNTRY DOES THIS FLAG BELONG TO?</h3>
+                <img id="flag-image" src="https://flagcdn.com/w640/sv.png"
+                    alt="A countries flag. Once your answer is submitted another flag will display.">
+                <label class="labels" for="user-answer">Enter Answer</label>
+                <input class="input" type="text" id="user-answer">
+                <button class="button" onclick="userAnswer()" id="submit-button"
+                    aria-label="Submit the answer to see if it is correct or incorrect">Submit Answer</button>
             </div>
         </div>
     </section>
     <footer id="footer">
         <ul id="social-container">
-            <li><a href="https://www.instagram.com/" aria-label="Visit our instagram page (opens in a new tab)" rel="noopener" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="https://www.twitter.com/" aria-label="Visit our twitter page (opens in a new tab)" rel="noopener" target="_blank"></a><i class="fa-brands fa-twitter"></i></a></li>
-            <li><a href="https://www.youtube.com/" aria-label="Visit our youtube page (opens in a new tab)" rel="noopener" target="_blank"></a><i class="fa-brands fa-youtube"></i></a></li>
-            <li><a href="https://www.facebook.com/" aria-label="Visit our facebook page (opens in a new tab)" rel="noopener" target="_blank"></a><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/" aria-label="Visit our instagram page (opens in a new tab)"
+                    rel="noopener" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.twitter.com/" aria-label="Visit our twitter page (opens in a new tab)"
+                    rel="noopener" target="_blank"></a><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://www.youtube.com/" aria-label="Visit our youtube page (opens in a new tab)"
+                    rel="noopener" target="_blank"></a><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="https://www.facebook.com/" aria-label="Visit our facebook page (opens in a new tab)"
+                    rel="noopener" target="_blank"></a><i class="fa-brands fa-facebook"></i></a></li>
         </ul>
         <div id="copyright">&copy;Copyright 2022</div>
     </footer>
