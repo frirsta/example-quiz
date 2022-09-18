@@ -248,26 +248,45 @@ h3 {
 
 @media screen and (max-width: 600px) {
     h2, h3{
-        font-size: 60%;
+        font-size: 50%;
+        letter-spacing: 2px;
     }
     #logo {
         font-size: 150%;
         margin-left: 1%;
         margin-top: unset;
     }
-    
+    .logo {
+        letter-spacing: 2px;
+    }
     #hero-image {
         background: url("../images/hero-small.png") no-repeat;
         width: 50%;
-        height: 700px;
+        height: 300px;
     
     }
     #hero-outer {
         justify-content: unset;
+        height: 300px;
     }
 
         #hero-text {
             width: 80%;
-            bottom: 35%;
+            bottom: 20%;
+            left: 2%;
+        }
+
+        .button {
+            font-size: 50%;
+            padding: 1%;
+            letter-spacing: 2px;
+        }
+
+        .labels{
+            letter-spacing: 2px;
+        }
+
+        #score-display {
+            letter-spacing: 2px;
         }
 }
