@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Flag quiz. A quiz in which you see a flag and need to write to which country it belongs.">
+    <meta name="keywords" content="flag quiz, quiz, world flags, all countries flags, challenging quiz">
     <link type="image/png" sizes="16x16" rel="icon" href="/favicon.ico">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
@@ -14,17 +14,18 @@
 
 <body>
     <header>
-        <a href="index.html">
+        <a href="index.html" aria-label="Go to our contact page">
             <h1 id="logo">Guess The Flag</h1>
         </a>
     </header>
     <section>
         <div id="hero-outer">
-            <div id="hero-image"></div>
+            <div id="hero-image" aria-label="An animation of the planet"></div>
             <div id="hero-text">
                 <h2>How many flags of the world do you know? <br>
                     Test your skills with the Guess The Flag Quiz</h2>
-                <a href="#name-outer" id="start-quiz" aria-label="Go to quiz page">Start Quiz</a>
+                
+                <button type="button" id="start-quiz" aria-label="Go to enter name page to start the quiz">Start Quiz</button>
             </div>
         </div>
     </section>
@@ -35,7 +36,7 @@
                 <label id="username-label" for="username">Enter name here!</label>
                 <input type="text" name="username" id="username">
                 <form action="quiz-outer" method="get">
-                    <button type="button" id="name-button">Enter Name</button>
+                    <button type="button" id="name-button" aria-label="Submit name and start the quiz">Enter Name</button>
                 </form>
             </div>
         </div>
@@ -45,9 +46,9 @@
             <div id="quiz-container">
                 <div>
                     <div id="question-area">TEXT</div>
-                    <img id="flag-image">
+                    <img id="flag-image" alt="A countries flag. Once your answer is submitted another flag will display.">
                     <input type="text" id="user-answer">
-                    <button onclick="userAnswer()" id="submit-button">Submit Answer</button>
+                    <button onclick="userAnswer()" id="submit-button" aria-label="Submit the answer to see if it is correct or incorrect">Submit Answer</button>
                 </div>
             </div>
             <div id="name-display"></div>

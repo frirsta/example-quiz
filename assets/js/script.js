@@ -1,4 +1,14 @@
 /**
+ * when page is refreshed it starts from the top of the page
+ */
+window.onload = function () {
+    scrollTo(0, 0)
+}
+
+
+
+
+/**
  * Gets users name and displays it on screen
  * it also alerts if name is not written
  */
@@ -21,7 +31,7 @@ document.getElementById("name-button").addEventListener("click", function () {
  * All flags name of country and letters to add to image
  * link for it to show that specific country's flag  
  */
- const flagData = {
+const flagData = {
     flag: 0,
     pair: [{
             imgCode: "ad",
@@ -1043,13 +1053,15 @@ document.getElementById("name-button").addEventListener("click", function () {
     ]
 };
 
+
+/**
+ * Result will be stores in flagResult variable
+ */
 let flagResult = "";
 /**
  * Get random flag from flagData to be displayed on page for quiz
  */
 function startQuiz() {
-    document.getElementById("user-answer").value = "";
-    document.getElementById("user-answer").focus();
     flagData.flag = Math.floor(Math.random() * flagData.pair.length);
     document.getElementById("flag-image").src = "https://flagcdn.com/w640/" + flagData.pair[flagData.flag].imgCode + ".png";
     flagResult = document.getElementById("correct-answer").textContent = flagData.pair[flagData.flag].country;
@@ -1064,14 +1076,20 @@ startQuiz();
  */
 function userAnswer() {
     let inputAnswer = document.getElementById("user-answer").value.toLowerCase();
-    if (inputAnswer == flagData.pair[flagData.flag].country.toLowerCase()) {
+    if (inputAnswer === "") {
+        alert("You have to write your guess before moving on to the next flag")
+    } else if (inputAnswer == flagData.pair[flagData.flag].country.toLowerCase()) {
+        
         alert(`${inputAnswer} is the correct answer!`);
         addPoint();
+        startQuiz();
     } else {
+        
         alert(`Your guess ${inputAnswer} is incorrect, the correct answer is ${flagResult}`);
         addIncorrectPoint();
+        startQuiz();
     }
-    startQuiz();
+    
 }
 /**  
  * Get score from DOM and add point to correct score.  
@@ -1089,8 +1107,23 @@ function addIncorrectPoint() {
 }
 
 /**
- * when page is refreshed it starts from the top of the page
+ * When user click enter on their keyboard the button will be clicked
  */
-window.onload = function() {
-    scrollTo(0, 0)
-}
+let inputName = document.getElementById("username");
+inputName.addEventListener("keypress", function(event) {
+    if(event.key === "Enter") {
+        event.preventDefault();
+
+        document.getElementById("name-button").click();
+    }
+});
+
+let inputAnswer = document.getElementById("user-answer");
+inputAnswer.addEventListener("keypress", function(event) {
+    if(event.key === "Enter") {
+        event.preventDefault();
+
+        document.getElementById("submit-button").click();
+    }
+});
+

@@ -58,6 +58,7 @@ body {
     border: 3px solid green;
     color: green;
     font-size: 180%;
+    
 }
 
 /* Name area */
@@ -85,7 +86,9 @@ body {
     outline: 3px solid green;
 }
 
-#name-button {}
+#name-button {
+    
+}
 
 #name-display {
     color: red;
