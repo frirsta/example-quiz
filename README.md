@@ -30,10 +30,9 @@ button -->
 
 ### Features Left to Implement 
 * footer
----
 
-
-
+The globe favicon is from [favicon](https://icons8.com/icon/63766/globe")
+The icons8 is by [icon](https://icons8.com)
 ## Testing 
 ---
 
