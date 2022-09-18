@@ -5,7 +5,15 @@ window.onload = function () {
     scrollTo(0, 0)
 }
 
-
+/**
+ * send viewer to name input area
+ */
+function homeButton(event) {
+    event.preventDefault();
+    document.getElementById("name-outer").scrollIntoView();
+}
+let homePageButton = document.getElementById("start-quiz");
+homePageButton.addEventListener("click", homeButton);
 
 
 /**
