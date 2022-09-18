@@ -11,6 +11,9 @@ window.onload = function () {
 function homeButton(event) {
     event.preventDefault();
     document.getElementById("name-outer").scrollIntoView();
+    document.getElementById("username").value = "";
+    document.getElementById("username").focus();
+
 }
 let homePageButton = document.getElementById("start-quiz");
 homePageButton.addEventListener("click", homeButton);
@@ -27,6 +30,8 @@ document.getElementById("name-button").addEventListener("click", function () {
     if (inputName === "") {
         alert("Enter your name!")
     } else {
+        document.getElementById("user-answer").value = "";
+        document.getElementById("user-answer").focus();
         element.scrollIntoView();
         document.getElementById("name-display").innerHTML = `<h2>Go ${inputName}!</h2>`
 
@@ -1087,17 +1092,17 @@ function userAnswer() {
     if (inputAnswer === "") {
         alert("You have to write your guess before moving on to the next flag")
     } else if (inputAnswer == flagData.pair[flagData.flag].country.toLowerCase()) {
-        
+
         alert(`${inputAnswer} is the correct answer!`);
         addPoint();
         startQuiz();
     } else {
-        
+
         alert(`Your guess ${inputAnswer} is incorrect, the correct answer is ${flagResult}`);
         addIncorrectPoint();
         startQuiz();
     }
-    
+
 }
 /**  
  * Get score from DOM and add point to correct score.  
@@ -1118,8 +1123,8 @@ function addIncorrectPoint() {
  * When user click enter on their keyboard the button will be clicked
  */
 let inputName = document.getElementById("username");
-inputName.addEventListener("keypress", function(event) {
-    if(event.key === "Enter") {
+inputName.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
         event.preventDefault();
 
         document.getElementById("name-button").click();
@@ -1127,11 +1132,10 @@ inputName.addEventListener("keypress", function(event) {
 });
 
 let inputAnswer = document.getElementById("user-answer");
-inputAnswer.addEventListener("keypress", function(event) {
-    if(event.key === "Enter") {
+inputAnswer.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
         event.preventDefault();
 
         document.getElementById("submit-button").click();
     }
 });
-
