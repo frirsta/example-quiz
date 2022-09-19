@@ -1096,13 +1096,15 @@ function userAnswer() {
 
         alert(`${inputAnswer} is the correct answer!`);
         addPoint();
-        startQuiz();
+        pointCounter();
+        // startQuiz();
 
     } else {
 
         alert(`Your guess ${inputAnswer} is incorrect, the correct answer is ${flagResult}`);
         addIncorrectPoint();
-        startQuiz();
+        pointCounter();
+        // startQuiz();
 
     }
     inputArea.value = "";
@@ -1121,6 +1123,19 @@ function addPoint() {
 function addIncorrectPoint() {
     let score = document.getElementById("incorrect").innerText;
     document.getElementById("incorrect").innerText = ++score;
+}
+
+function pointCounter() {
+let maxQuestions = Number(document.getElementById("correct").innerText) + Number(document.getElementById("incorrect").innerText);
+
+if (maxQuestions !== 15) {
+    startQuiz();
+  } else {
+   alert('test: ditt spel är slut');
+  // Här vill du anropa en ny funktion som samlar alla poäng och avslutar spelet samt visar upp resultatet
+  }
+console.log(maxQuestions);
+
 }
 
 /**
@@ -1143,3 +1158,4 @@ inputAnswer.addEventListener("keypress", function (event) {
         document.getElementById("submit-button").click();
     }
 });
+
