@@ -244,7 +244,30 @@ h3 {
 @media screen and (min-width: 1200px) {}
 
 /* For screens 768px wide and wider */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+
+    h2,
+    h3 {
+        font-size: 200%;
+    }
+
+    #logo {
+        margin-top: unset;
+    }
+
+    #hero-outer {
+        justify-content: space-between;
+    }
+
+    #hero-text {
+        width: 50%;
+    }
+
+    #start-quiz {
+        position: relative;
+        right: 15%;
+    }
+}
 
 /* For screens 600px wide and wider */
 @media screen and (min-width: 600px) {}
@@ -297,9 +320,10 @@ h3 {
         margin-top: 7%;
     }
 
-        #start-quiz {
-            margin-top: 10%;
-        }
+    #start-quiz {
+        margin-top: 10%;
+    }
+
     .labels {
         font-size: 80%;
         letter-spacing: 2px;
@@ -347,7 +371,7 @@ h3 {
 
     }
 
-    #name-display{
+    #name-display {
         font-size: 150%;
     }
 
@@ -393,17 +417,18 @@ h3 {
     #footer {
         margin: unset;
     }
-#social-container{
-    height: 50px;
-    width: 100%;
-    font-size: 120%;
-    align-items: end;
-    
-}
 
-#copyright{
-    font-size: 70%;
-    margin: 5%;
-}
+    #social-container {
+        height: 50px;
+        width: 100%;
+        font-size: 120%;
+        align-items: end;
+
+    }
+
+    #copyright {
+        font-size: 70%;
+        margin: 5%;
+    }
 
 }
