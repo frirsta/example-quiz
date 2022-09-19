@@ -248,7 +248,7 @@ h3 {
 
     h2,
     h3 {
-        font-size: 200%;
+        font-size: 100%;
     }
 
     #logo {
@@ -266,6 +266,35 @@ h3 {
     #start-quiz {
         position: relative;
         right: 15%;
+    }
+
+    #name-outer{
+        width: unset;
+    }
+
+    #flag-quiz {
+        height: 80vh;
+        justify-content: start;
+    }
+
+    #flag-image{
+        width: 70%;
+        height: 30%;
+    }
+
+    #score-display {
+        top: unset;
+        left: 0;
+        font-size: 60%;
+
+    }
+    #quiz-outer{
+        font-size: 100%;
+    }
+
+    #quiz-container{
+        width: 70%;
+
     }
 }
 
