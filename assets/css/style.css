@@ -253,7 +253,7 @@ h3 {
 
     h2,
     h3 {
-        font-size: 100%;
+        font-size: 120%;
         letter-spacing: 2px;
     }
 
@@ -280,23 +280,26 @@ h3 {
     }
 
     #hero-text {
-        width: 75%;
-        top: 1%;
+        width: 100%;
         left: 2%;
-        text-align: unset;
+        text-align: right;
         display: unset;
         flex-direction: unset;
         justify-content: unset;
         align-items: unset;
+        margin-top: 5%;
     }
 
     .button {
         padding: 3%;
         letter-spacing: 2px;
         font-size: 65%;
-        margin-top: 5%;
+        margin-top: 7%;
     }
 
+        #start-quiz {
+            margin-top: 10%;
+        }
     .labels {
         font-size: 80%;
         letter-spacing: 2px;
@@ -304,6 +307,7 @@ h3 {
 
     .input {
         width: 80%;
+        height: 20%;
     }
 
     /* Name section */
@@ -383,5 +387,23 @@ h3 {
     #user-answer {
         padding: unset;
     }
+
+    /* footer */
+
+    #footer {
+        margin: unset;
+    }
+#social-container{
+    height: 50px;
+    width: 100%;
+    font-size: 120%;
+    align-items: end;
+    
+}
+
+#copyright{
+    font-size: 70%;
+    margin: 5%;
+}
 
 }
