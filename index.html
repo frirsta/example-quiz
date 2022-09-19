@@ -16,7 +16,7 @@
 
 <body>
     <header>
-            <h1 class="logo" id="logo">Guess The Flag</h1>
+        <h1 class="logo" id="logo">Guess The Flag</h1>
     </header>
     <section id="hero-section">
         <div id="hero-outer">
@@ -25,7 +25,8 @@
                 <h2>How many flags of the world do you know? <br>
                     Test your skills with the Guess The Flag Quiz</h2>
 
-                <button class="button" type="button" id="start-quiz" onclick="homeButton(event)" aria-label="Go to enter name page to start the quiz">Start Quiz</button>
+                <button class="button" type="button" id="start-quiz" onclick="homeButton(event)"
+                    aria-label="Go to enter name page to start the quiz">Start Quiz</button>
             </div>
         </div>
     </section>
@@ -58,13 +59,25 @@
         <div id="score-display">
             <div id="name-display"></div>
             <div id="score-container">
-                <span id="flag-result"></span>
+                <span class="flag-result"></span>
                 <span id="correct-answer"></span>
-                <p class="scores">Correct Answer: <span id="correct"></span></p>
-                <p class="scores">Incorrect Answer: <span id="incorrect"></span></p>
+                <p class="scores">Correct Answer: <span class="correct"></span></p>
+                <p class="scores">Incorrect Answer: <span class="incorrect"></span></p>
             </div>
         </div>
-        </section>
+    </section>
+    <section id="summary-section">
+        <div id="summary-outer">
+            <div id="summary-container">
+                <h3>Result</h3>
+                <span class="flag-result"></span>
+                <p class="scores">Correct Answer: <span class="correct"></span></p>
+                <p class="scores">Incorrect Answer: <span class="incorrect"></span></p>
+            </div>
+
+        </div>
+
+    </section>
     <footer id="footer">
         <ul id="social-container">
             <li><a href="https://www.instagram.com/" aria-label="Visit our instagram page (opens in a new tab)"

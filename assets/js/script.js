@@ -1077,7 +1077,7 @@ let flagResult = "";
 function startQuiz() {
     flagData.flag = Math.floor(Math.random() * flagData.pair.length);
     document.getElementById("flag-image").src = "https://flagcdn.com/w640/" + flagData.pair[flagData.flag].imgCode + ".png";
-    flagResult = document.getElementById("flag-result").innerText = flagData.pair[flagData.flag].country;
+    flagResult = document.getElementsByClassName("flag-result").innerText = flagData.pair[flagData.flag].country;
 }
 startQuiz();
 
@@ -1114,19 +1114,19 @@ function userAnswer() {
  * Get score from DOM and add point to correct score.  
  */
 function addPoint() {
-    let score = document.getElementById("correct").innerText;
-    document.getElementById("correct").innerText = ++score;
+    let score = document.getElementsByClassName("correct").innerText;
+    document.getElementsByClassName("correct").innerText = ++score;
 }
 /**  
  * Get incorrect score from DOM and add point to incorrect score.
  */
 function addIncorrectPoint() {
-    let score = document.getElementById("incorrect").innerText;
-    document.getElementById("incorrect").innerText = ++score;
+    let score = document.getElementsByClassName("incorrect").innerText;
+    document.getElementsByClassName("incorrect").innerText = ++score;
 }
 
 function pointCounter() {
-let maxQuestions = Number(document.getElementById("correct").innerText) + Number(document.getElementById("incorrect").innerText);
+let maxQuestions = Number(document.getElementsByClassName("correct").innerText) + Number(document.getElementsByClassName("incorrect").innerText);
 
 if (maxQuestions !== 15) {
     startQuiz();
