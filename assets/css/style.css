@@ -321,7 +321,10 @@ h3 {
 
 
 /* Quiz section */
-
+#flag-quiz {
+    height: 100vh;
+    justify-content: unset;
+}
 #flag-quiz h2 {
     font-size: 150%;
     font-weight: lighter;
@@ -331,7 +334,7 @@ h3 {
     letter-spacing: 2px;
     width: 100%;
     position: unset;
-    margin-top: 5%;
+  
 }
 
 #flag-image {
