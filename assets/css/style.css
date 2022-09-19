@@ -147,12 +147,21 @@ h3 {
     width: 25%;
     height: 20%;
     position: absolute;
-    margin-top: 5%;
 }
 
 /* Quiz outer */
+
+#flag-quiz {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 #flag-quiz h2 {
     text-align: center;
+    font-size: 150%;
 }
 
 #quiz-outer {
@@ -179,7 +188,7 @@ h3 {
 #flag-image {
     width: 70%;
     height: 35vh;
-    margin: 5% 0 10% 0;
+    margin-top: 5%;
 }
 
 
@@ -247,47 +256,53 @@ h3 {
 @media screen and (min-width: 600px) {}
 
 @media screen and (max-width: 600px) {
-    h2, h3{
+
+    h2,
+    h3 {
         font-size: 50%;
         letter-spacing: 2px;
     }
+
     #logo {
         font-size: 150%;
         margin-left: 1%;
         margin-top: unset;
     }
+
     .logo {
         letter-spacing: 2px;
     }
+
     #hero-image {
         background: url("../images/hero-small.png") no-repeat;
         width: 50%;
         height: 300px;
-    
+
     }
+
     #hero-outer {
         justify-content: unset;
         height: 300px;
     }
 
-        #hero-text {
-            width: 80%;
-            bottom: 20%;
-            left: 2%;
-        }
+    #hero-text {
+        width: 80%;
+        bottom: 20%;
+        left: 2%;
+    }
 
-        .button {
-            font-size: 50%;
-            padding: 1%;
-            letter-spacing: 2px;
-        }
+    .button {
+        font-size: 50%;
+        padding: 1%;
+        letter-spacing: 2px;
+    }
 
-        .labels{
-            font-size: 80%;
-            letter-spacing: 2px;
-        }
+    .labels {
+        font-size: 80%;
+        letter-spacing: 2px;
+    }
 
-        #score-display {
-            letter-spacing: 2px;
-        }
+    #score-display {
+        letter-spacing: 2px;
+    }
 }
