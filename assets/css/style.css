@@ -27,7 +27,7 @@ h2,
 h3 {
     letter-spacing: 3px;
     margin: 1%;
-    font-size: 100%;
+    font-size: 130%;
     text-align: left;
 
 }
@@ -69,14 +69,15 @@ h3 {
 }
 
 #hero-text {
-    text-align: center;
-    width: 40%;
+    text-align: right;
+    width: 35%;
     position: relative;
-    bottom: 10%;
+    bottom: 15%;
 }
 
+/* hero button*/
 #start-quiz {
-    margin-top: 5%;
+
 }
 
 /* All buttons */
@@ -240,17 +241,7 @@ h3 {
 @media screen and (min-width: 1200px) {}
 
 /* For screens 768px wide and wider */
-@media screen and (min-width: 768px) {
-    #logo {
-        font-size: 250%;
-        margin-left: 1%;
-        margin-top: unset;
-    }
-
-    #hero-outer {
-        justify-content: unset;
-    }
-}
+@media screen and (min-width: 768px) {}
 
 /* For screens 600px wide and wider */
 @media screen and (min-width: 600px) {}
