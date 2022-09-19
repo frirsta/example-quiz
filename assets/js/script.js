@@ -1132,7 +1132,7 @@ if (maxQuestions !== 15) {
     startQuiz();
   } else {
    alert('test: ditt spel är slut');
-  // Här vill du anropa en ny funktion som samlar alla poäng och avslutar spelet samt visar upp resultatet
+ /* Call Summary page function */
   }
 console.log(maxQuestions);
 
