@@ -19,9 +19,8 @@ body {
     font-family: 'Playfair Display SC', serif;
     overflow-x: hidden;
     color: #0e2305;
-    background: rgb(242, 214, 82);
-    background: linear-gradient(0deg, rgba(242, 214, 82, 1) 17%, rgba(255, 247, 111, 1) 38%, rgba(42, 237, 255, 1) 55%, rgba(14, 79, 87, 1) 98%);
-
+    background: rgb(31, 184, 80);
+    background: linear-gradient(0deg, rgba(31, 184, 80, 1) 0%, rgba(83, 252, 138, 1) 24%, rgba(65, 229, 224, 1) 50%, rgba(51, 87, 97, 1) 81%, rgba(3, 48, 60, 1) 100%);
 }
 
 h2,
@@ -129,6 +128,10 @@ h3 {
     height: 10%;
     border-bottom: 2px solid #0e2305;
     background-color: transparent;
+}
+
+.input:focus {
+    border: 3px solid #0e2305;
 }
 
 #username {}
@@ -320,52 +323,65 @@ h3 {
     }
 
 
-/* Quiz section */
-#flag-quiz {
-    height: 100vh;
-    justify-content: unset;
-}
-#flag-quiz h2 {
-    font-size: 150%;
-    font-weight: lighter;
-}
+    /* Quiz section */
+    #flag-quiz {
+        height: 70vh;
+        justify-content: unset;
+    }
 
-#score-display {
-    letter-spacing: 2px;
-    width: 100%;
-    position: unset;
-  
-}
+    #flag-quiz h2 {
+        font-size: 100%;
+        margin-bottom: 5%;
+        font-weight: lighter;
+    }
 
-#flag-image {
-    width: 70%;
-    height: 20vh;
-    margin-top: 5%;
-}
+    #score-display {
+        letter-spacing: 2px;
+        width: 100%;
+        position: unset;
+        margin-bottom: 5%;
 
-#question-area {
-    margin-top: 5%;
-}
+    }
 
-#quiz-outer {
-    width: 100%;
-    display: unset;
+    #name-display{
+        font-size: 150%;
+    }
 
-    align-items: unset;
-    font-size: 100%;
-    margin-top: unset;
-}
+    #flag-image {
+        width: 70%;
+        height: 20vh;
+        margin-top: 3%;
+    }
 
-#quiz-container {
-    width: 100%;
-}
+    #question-area {
+        margin-top: 3%;
+        text-align: center;
+        font-size: 80%;
+    }
 
-#score-container {
-    margin-top: 5%;
-}
+    #quiz-outer {
+        width: 100%;
+        display: unset;
 
-.scores {
-    margin: unset;
-}
+        align-items: unset;
+        font-size: 100%;
+        margin-top: unset;
+    }
+
+    #quiz-container {
+        width: 100%;
+    }
+
+    #score-container {
+        margin-top: 5%;
+    }
+
+    .scores {
+        margin: unset;
+    }
+
+    #user-answer {
+        padding: unset;
+    }
 
 }
