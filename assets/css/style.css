@@ -268,22 +268,50 @@ h3 {
 /* for devices 600px wide and smaller */
 
 @media screen and (max-width: 600px) {
-    #logo{
+    #logo {
         font-size: 200%;
         margin-bottom: 2%;
     }
 
-    .labels{
-        font-size: 130%;
+    #start-outer {
+        height: 65vh;
+        width: 65%;
+        opacity: 0.95;
+        font-size: 80%;
+        padding: 2%;
     }
 
-    .button{
+    .labels {
+        font-size: 120%;
+    }
+
+    .button {
         padding: 3%;
         margin-top: 15%;
+        font-size: 80%;
     }
 
-    #name-outer{
+    #name-outer {
+        height: 65vh;
         width: 65%;
-        height: 70vh;
+    }
+
+    #question-area {
+        font-size: 80%;
+        font-weight: 300;
+        letter-spacing: 0px;
+        padding: 15% 10%;
+        text-align: center;
+    }
+
+    #quiz-outer {
+        height: 65vh;
+        width: 65%;
+    }
+
+    #flag-image {
+        height: unset;
+        width: 70%;
+        margin-bottom: 15%;
     }
 }
