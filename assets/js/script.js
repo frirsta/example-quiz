@@ -6,6 +6,7 @@ const startSection = document.getElementById("start-section");
 const nameSection = document.getElementById("name-section");
 const flagSection = document.getElementById("flag-section");
 const scoreSection = document.getElementById("score-section");
+const summarySection = document.getElementById("summary-section");
 window.onload = function () {
     scrollTo(0, 0);
 };
@@ -15,7 +16,6 @@ window.onload = function () {
  */
 function homeButton(event) {
     event.preventDefault();
-    document.getElementById("name-outer").scrollIntoView();
     document.getElementById("username").value = "";
     document.getElementById("username").focus();
 
@@ -37,7 +37,6 @@ document.getElementById("name-button").addEventListener("click", function () {
     } else {
         document.getElementById("user-answer").value = "";
         document.getElementById("user-answer").focus();
-        element.scrollIntoView();
         document.getElementById("name-display").innerHTML = `<h2>Go ${inputName}!</h2>`;
 
     }
@@ -1131,15 +1130,15 @@ function addIncorrectPoint() {
 }
 
 function pointCounter() {
-let maxQuestions = Number(document.getElementsByClassName("correct").innerText) + Number(document.getElementsByClassName("incorrect").innerText);
+    let maxQuestions = Number(document.getElementsByClassName("correct").innerText) + Number(document.getElementsByClassName("incorrect").innerText);
 
-if (maxQuestions !== 15) {
-    startQuiz();
-  } else {
-   alert('test: ditt spel är slut');
- /* Call Summary page function */
-  }
-console.log(maxQuestions);
+    if (maxQuestions !== 15) {
+        startQuiz();
+    } else {
+        alert('test: ditt spel är slut');
+        /* Call Summary page function */
+    }
+    console.log(maxQuestions);
 
 }
 
@@ -1163,4 +1162,3 @@ inputAnswer.addEventListener("keypress", function (event) {
         document.getElementById("submit-button").click();
     }
 });
-

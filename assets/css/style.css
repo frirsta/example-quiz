@@ -43,11 +43,13 @@ h3 {
     margin-top: 1%;
 }
 
+/* All sections */
+
 
 /* Hero area */
 
-#hero-section {
-    display: none;
+/* #hero-section {
+    
 }
 
 #hero-outer {
@@ -73,7 +75,7 @@ h3 {
     width: 35%;
     position: relative;
     bottom: 15%;
-}
+} */
 
 /* hero button*/
 #start-quiz {}
@@ -95,7 +97,7 @@ h3 {
 /* Name area */
 
 #name-section {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -120,7 +122,12 @@ h3 {
 }
 
 /* name input and answer input */
+#username {}
 
+#username-label {}
+
+
+#name-button {}
 
 /*name label and quiz label*/
 .labels {
@@ -140,37 +147,16 @@ h3 {
     border: 3px solid #fff;
 }
 
-#username {}
-
-#username-label {}
-
-
-#name-button {}
-
-#name-display {}
-
-/*score display area*/
-#score-section {
-    display: none;
-}
-
-#score-display {
-    font-size: 80%;
-    letter-spacing: 3px;
-    width: 25%;
-    height: 20%;
-    position: absolute;
-}
 
 /* Quiz outer */
 
 #flag-section {
-    height: auto;
-    width: 100%;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: auto;
+    width: 100%;
 }
 
 #flag-section h2 {
@@ -206,43 +192,11 @@ h3 {
 
 #submit-button {}
 
-#name-display {}
-
-#score-container {}
-
-
-.scores {
-    border-bottom: 2px solid #fff;
-    margin: 5% 0;
-    width: 100%;
-}
-
-
-#footer {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 1%;
-}
-
-#social-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    list-style: none;
-    justify-content: space-around;
-    font-size: 150%;
-    height: 100px;
-    width: 50%;
-    margin-top: 5%;
-}
-
 
 /* summary section */
 
 #summary-section {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -262,6 +216,19 @@ h3 {
     flex-direction: column;
     align-items: center;
 }
+
+#name-display {}
+
+
+.scores {
+    border-bottom: 2px solid #fff;
+    margin: 5% 0;
+    width: 100%;
+}
+
+
+
+
 
 /* Start game */
 
@@ -286,4 +253,27 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+/* footer */
+
+#footer {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+}
+
+#social-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    justify-content: space-around;
+    font-size: 150%;
+    height: 100px;
+    width: 50%;
+    margin-top: 5%;
 }
