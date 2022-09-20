@@ -34,7 +34,8 @@
             <div id="name-container">
                 <label class="labels" id="username-label" for="username">Enter name here!</label>
                 <input class="input" type="text" name="username" id="username">
-                <button class="button" type="button" id="name-button" onclick="nameButtonEnter(event)" aria-label="Submit name and start the quiz">Enter
+                <button class="button" type="button" id="name-button" onclick="nameButtonEnter(event)"
+                    aria-label="Submit name and start the quiz">Enter
                     Name</button>
 
             </div>
@@ -52,16 +53,18 @@
                     aria-label="Submit the answer to see if it is correct or incorrect">Submit Answer</button>
             </div>
         </div>
+        <div id="points"> 
+        <span class="flag-result"></span>
+        <span id="correct-answer"></span>
+        <p class="scores">Correct Answer: <span id="correct"></span></p>
+        <p class="scores">Incorrect Answer: <span id="incorrect"></span></p>
+    </div>
     </section>
     <section id="summary-section">
         <div id="summary-outer">
             <div id="summary-container">
                 <div id="name-display"></div>
                 <h3>Result</h3>
-                <span class="flag-result"></span>
-                <span id="correct-answer"></span>
-                <p class="scores">Correct Answer: <span class="correct"></span></p>
-                <p class="scores">Incorrect Answer: <span class="incorrect"></span></p>
                 <button class="button" id="play-again-button" type="button">Play Again</button>
             </div>
         </div>

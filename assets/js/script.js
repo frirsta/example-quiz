@@ -35,6 +35,14 @@ function nameButtonEnter(event) {
     }
 
 }
+/* 
+ * get summary page
+ */
+
+function getSummaryPage() {
+    flagSection.style.display = "none";
+    summarySection.style.display = "flex";
+}
 
 
 /**
@@ -1076,7 +1084,7 @@ function startQuiz() {
     document.getElementById("flag-image").src = "https://flagcdn.com/w640/" + flagData.pair[flagData.flag].imgCode + ".png";
     flagResult = document.getElementsByClassName("flag-result").innerText = flagData.pair[flagData.flag].country;
 }
-startQuiz();
+
 
 
 /**
@@ -1084,52 +1092,51 @@ startQuiz();
  * shows alert if answer is correct and incorrect and
  * after the alert a new flag will display.
  */
-function userAnswer() {
+function userAnswer(event) {
+    event.preventDefault()
     let inputAnswer = document.getElementById("user-answer").value.toLowerCase();
     let inputArea = document.getElementById("user-answer");
     if (inputAnswer === "") {
         alert("You have to write your guess before moving on to the next flag");
     } else if (inputAnswer == flagData.pair[flagData.flag].country.toLowerCase()) {
-
         alert(`${inputAnswer} is the correct answer!`);
         addPoint();
         pointCounter();
-        // startQuiz();
-
     } else {
-
         alert(`Your guess ${inputAnswer} is incorrect, the correct answer is ${flagResult}`);
         addIncorrectPoint();
         pointCounter();
-        // startQuiz();
 
     }
     inputArea.value = "";
-
 }
+
+let submitButton = document.getElementById("submit-button");
+submitButton.addEventListener("click", userAnswer);
+
 /**  
  * Get score from DOM and add point to correct score.  
  */
 function addPoint() {
-    let score = document.getElementsByClassName("correct").innerText;
-    document.getElementsByClassName("correct").innerText = ++score;
+    let score = document.getElementById("correct").innerText;
+    document.getElementById("correct").innerText = ++score;
 }
 /**  
  * Get incorrect score from DOM and add point to incorrect score.
  */
 function addIncorrectPoint() {
-    let score = document.getElementsByClassName("incorrect").innerText;
-    document.getElementsByClassName("incorrect").innerText = ++score;
+    let score = document.getElementById("incorrect").innerText;
+    document.getElementById("incorrect").innerText = ++score;
+
 }
 
 function pointCounter() {
-    let maxQuestions = Number(document.getElementsByClassName("correct").innerText) + Number(document.getElementsByClassName("incorrect").innerText);
-
+    let maxQuestions = Number(document.getElementById("correct").innerText) + Number(document.getElementById("incorrect").innerText);
     if (maxQuestions !== 15) {
         startQuiz();
     } else {
         alert('test: ditt spel är slut');
-        /* Call Summary page function */
+        getSummaryPage();
     }
     console.log(maxQuestions);
 
@@ -1147,11 +1154,10 @@ inputName.addEventListener("keypress", function (event) {
     }
 });
 
-let inputAnswer = document.getElementById("user-answer");
-inputAnswer.addEventListener("keypress", function (event) {
+let userInput = document.getElementById("user-answer");
+userInput.addEventListener("keypress", function (event) {
     if (event.key === "Enter") {
         event.preventDefault();
-
         document.getElementById("submit-button").click();
     }
 });
