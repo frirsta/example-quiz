@@ -11,6 +11,17 @@ window.onload = function () {
     scrollTo(0, 0);
 };
 
+/* 
+* start button goes to name section
+*/
+function startButtonName(event){
+    event.preventDefault();
+    startSection.style.display = "none";
+    nameSection.style.display = "flex";
+}
+let startButton = document.getElementById("start-buttton");
+addEventListener("click", startButtonName);
+
 
 /**
  * Gets users name and displays it on screen

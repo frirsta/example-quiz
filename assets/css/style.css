@@ -143,9 +143,9 @@ h3 {
     opacity: 0.95;
 }
 
-#enter-name {
+#name-container {
     height: 100%;
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
