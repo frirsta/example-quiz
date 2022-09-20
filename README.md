@@ -12,21 +12,28 @@ Flag quiz is a site that challenges peoples flag skills as well as teaches them 
 ### Existing Features
 ---
 * Logo
-  * On top of the page are the logo witch links to the page.
+  * On top of the page is the logo with the name of the Quiz.
   
 * The landing page image
   * The landing includes text that allows the user to understand what type of quiz is on the website.
-  * This section introduces the user to to the Flag Quiz with an image of the globe to let the user know this is a "World" quiz before reading the text. Which will give the impression that they are on the website they are looking for, before reading the text saying its a world flag quiz.
-  * The landing page also has a button that sends the user to the next section of the page so they can start the quiz.
+  * This section introduces the user to to the Flag Quiz with an image of flags from different countries being held my people to let the user know this is a "Flag" quiz before reading the text. Which will give the impression that they are on the website they are looking for, before reading the text saying its a world flag quiz.
+  * There is also the text of the rules on the first page to allow the user to understand how the quiz works.
+  * The landing page also has a button that sends the user to the name section of the page so they can start the quiz.
 
-* Input name section 
-  * In this part of the website the user will write their name for it to be displayed in the quiz.
-  * When the name is written and the user clicks the button the website scrolls down to the quiz and the quiz begins.
+* Name section 
+  * In this part of the website the user will write their name for it to be displayed after the quiz.
+  * When the name is written and the user clicks the button the actual quiz will start.
 
-*   
-<!-- flag answer 
-button -->
----
+* Quiz section
+  * Question count. On top of the page is a question count, this allows the user to see how far they have gotten in the quiz and when it ends.
+  * The quiz question is displayed during the whole quiz.
+  * The flag that the user has to guess which country it belongs to is displayed under the question.
+  * Under the flag there is an input area and a submit button. This is where the user will write their answer and submit it. 
+* Summary section 
+  * Name display
+  * In this section the amount of correct and incorrect points will be displayed, to let the user know how the quiz went.
+  * Under the result score is a play again button, which lets the user play the quiz again
+  ---
 
 ### Features Left to Implement 
 * footer
@@ -35,6 +42,19 @@ The globe favicon is from [favicon](https://icons8.com/icon/63766/globe")
 The icons8 is by [icon](https://icons8.com)
 ## Testing 
 ---
+
+* HTML
+* CSS
+* JavaScript
+
+
+## Unfixed bugs
+
+## Deployment
+* This website was deployed by GitHub pages. The instructions to deploy are:
+  * From the GitHub repository, you go to the settings tab.
+  * Under the code and automation category you click on pages. 
+
 
 <!-- <p>
     <a href="http://jigsaw.w3.org/css-validator/check/referer">
