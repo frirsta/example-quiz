@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
 
-html {
-    scroll-behavior: smooth;
-}
 
 * {
     color: #ffffff;
@@ -44,43 +41,6 @@ h3 {
 }
 
 
-#hero-section{
-    display: none;
-}
-/* All sections */
-
-
-/* Hero area */
-
-/* #hero-section {
-    
-}
-
-#hero-outer {
-    height: 700px;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    align-items: center;
-
-}
-
-#hero-image {
-    background: url("../images/hero.png") no-repeat;
-    width: 100%;
-    height: 700px;
-
-}
-
-#hero-text {
-    text-align: right;
-    width: 35%;
-    position: relative;
-    bottom: 15%;
-} */
-
 /* Start game */
 
 
@@ -107,8 +67,6 @@ h3 {
 }
 
 
-/* hero button*/
-#start-button {}
 
 /* All buttons */
 
@@ -151,13 +109,13 @@ h3 {
     justify-content: center;
 }
 
-/* name input and answer input */
+/* name input and answer input 
 #username {}
 
 #username-label {}
 
 
-#name-button {}
+#name-button {} */
 
 /*name label and quiz label*/
 .labels {
@@ -214,13 +172,13 @@ h3 {
     width: 30vw;
 }
 
-#question-area {}
+/* #question-area {} */
 
 #user-answer {
     padding: 1%;
 }
 
-#submit-button {}
+/* #submit-button {} */
 
 
 /* summary section */
@@ -247,7 +205,7 @@ h3 {
     align-items: center;
 }
 
-#name-display {}
+/* #name-display {} */
 
 
 .scores {
