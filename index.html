@@ -22,8 +22,8 @@
         <div id="start-outer">
             <div id="start-container">
                 <h2>How many flags of the world do you know? Test your skills with the Guess The Flag Quiz</h2>
-                <hp>You will be presented 15 random flags out of all the 254 world flags and have to write the country
-                    it belongs too!</hp>
+                <p>You will be presented 15 random flags out of all the 254 world flags and have to write the country
+                    it belongs too!</p>
                 <button class="button" type="button" id="start-quiz" onclick="startButtonEnter(event)"
                     aria-label="Go to enter name page to start the quiz">Start Quiz</button>
             </div>
@@ -44,7 +44,9 @@
     <section id="flag-section">
         <div id="quiz-outer">
             <div id="quiz-container">
-                <div><span id="question-counter">0/15</span></div>
+                <div id="points">
+                <span id="flag-result"></span>
+                <span id="question-counter">0/15</span></div>
                 <h3 id="question-area">WHAT COUNTRY DOES THIS FLAG BELONG TO?</h3>
                 <img id="flag-image" src="https://flagcdn.com/w640/sv.png"
                     alt="A countries flag. Once your answer is submitted another flag will display.">
@@ -54,19 +56,18 @@
                     aria-label="Submit the answer to see if it is correct or incorrect">Submit Answer</button>
             </div>
         </div>
-        <div id="points"> 
-        <span class="flag-result"></span>
-        <span id="correct-answer"></span>
-        <p class="scores">Correct Answer: <span id="correct"></span></p>
-        <p class="scores">Incorrect Answer: <span id="incorrect"></span></p>
-    </div>
     </section>
     <section id="summary-section">
         <div id="summary-outer">
             <div id="summary-container">
                 <div id="name-display"></div>
                 <h3>Result</h3>
-                <button class="button" id="play-again-button" type="button" onclick="playAgainButtonEnter(event)" aria-label="Click to play again">Play Again</button>
+                <div id="result">
+                    <div><i class="fa-solid fa-circle-check"></i><span id="correct"></span></div>
+                    <div><i class="fa-solid fa-circle-xmark"></i><span id="incorrect"></span></div>
+                </div>
+                <button class="button" id="play-again-button" type="button" onclick="playAgainButtonEnter(event)"
+                    aria-label="Click to play again">Play Again</button>
             </div>
         </div>
     </section>

@@ -63,7 +63,15 @@ h3 {
 #start-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    padding: 5%;
+    height: 100%;
+
+}
+
+#start-container p{
+    font-size: 130%;
 }
 
 
@@ -120,7 +128,6 @@ h3 {
 /*name label and quiz label*/
 .labels {
     font-size: 150%;
-    margin: 2% 0;
     letter-spacing: 3px;
 }
 
@@ -133,6 +140,7 @@ h3 {
 
 .input:focus {
     border: 3px solid #fff;
+    background-color: transparent;
 }
 
 
@@ -167,6 +175,15 @@ h3 {
     align-items: center;
 }
 
+#points {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    padding: 1%;
+    
+}
+
 #flag-image {
     height: 30vh;
     width: 30vw;
@@ -176,6 +193,7 @@ h3 {
 
 #user-answer {
     padding: 1%;
+    
 }
 
 /* #submit-button {} */
@@ -197,12 +215,16 @@ h3 {
     width: 55%;
     height: 70vh;
     opacity: 0.95;
+
 }
 
 #summary-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
+    justify-content: space-between;
 }
 
 /* #name-display {} */

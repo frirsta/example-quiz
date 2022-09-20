@@ -27,11 +27,11 @@ function nameButtonEnter(event) {
 
     if (inputName === "") {
         alert("Enter your name!");
-    } else if(inputName != inputName.match(letters)){
+    } else if (inputName != inputName.match(letters)) {
         alert("Your name can only include letters and spaces");
         inputNameArea.value = "";
         inputNameArea.focus();
-       } else {
+    } else {
         nameSection.style.display = "none";
         flagSection.style.display = "flex";
         document.getElementById("user-answer").value = "";
@@ -1097,7 +1097,7 @@ let flagResult = "";
 function startQuiz() {
     flagData.flag = Math.floor(Math.random() * flagData.pair.length);
     document.getElementById("flag-image").src = "https://flagcdn.com/w640/" + flagData.pair[flagData.flag].imgCode + ".png";
-    flagResult = document.getElementsByClassName("flag-result").innerText = flagData.pair[flagData.flag].country;
+    flagResult = document.getElementById("flag-result").innerText = flagData.pair[flagData.flag].country;
 }
 
 
@@ -1114,8 +1114,8 @@ function userAnswer(event) {
     let inputArea = document.getElementById("user-answer");
     if (inputAnswer === "") {
         alert("You have to write your guess before moving on to the next flag");
-    } else if(inputAnswer != inputAnswer.match(letters)){
-     alert("Your answer can only include letters")
+    } else if (inputAnswer != inputAnswer.match(letters)) {
+        alert("Your answer can only include letters")
     } else if (inputAnswer == flagData.pair[flagData.flag].country.toLowerCase()) {
         alert(`${inputAnswer} is the correct answer!`);
         addPoint();
@@ -1126,7 +1126,7 @@ function userAnswer(event) {
         pointCounter();
 
     }
-    
+
     inputArea.value = "";
 }
 
@@ -1139,6 +1139,7 @@ submitButton.addEventListener("click", userAnswer);
 function addPoint() {
     let score = document.getElementById("correct").innerText;
     document.getElementById("correct").innerText = ++score;
+
 }
 /**  
  * Get incorrect score from DOM and add point to incorrect score.
@@ -1146,6 +1147,7 @@ function addPoint() {
 function addIncorrectPoint() {
     let score = document.getElementById("incorrect").innerText;
     document.getElementById("incorrect").innerText = ++score;
+
 
 }
 
@@ -1182,3 +1184,13 @@ userInput.addEventListener("keypress", function (event) {
         document.getElementById("submit-button").click();
     }
 });
+
+function correctAnswer() {
+let inputArea = document.getElementById("user-answer");
+inputArea.style.backgroundColor = "green";
+}
+
+function incorrectAnswer() {
+let inputArea = document.getElementById("user-answer");
+inputArea.style.backgroundColor = "green";
+}
