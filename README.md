@@ -32,7 +32,7 @@ Flag quiz is a site that challenges peoples flag skills as well as teaches them 
 * Summary section 
   * Name display
   * In this section the amount of correct and incorrect points will be displayed, to let the user know how the quiz went.
-  * Under the result score is a play again button, which lets the user play the quiz again
+  * Under the result score is a play again button, which lets the user play the quiz again.
   ---
 
 ### Features Left to Implement 
@@ -54,6 +54,10 @@ The icons8 is by [icon](https://icons8.com)
 * This website was deployed by GitHub pages. The instructions to deploy are:
   * From the GitHub repository, you go to the settings tab.
   * Under the code and automation category you click on pages. 
+  * From the branch drop-down menu, select Main or Master Branch and click on the save button to the right of the drop-down menu.
+  * After a few minutes, refresh the page and a link will appear on top of the page area and this is the link to the website.
+
+The live link: https://frirsta.github.io/example-quiz/
 
 
 <!-- <p>
