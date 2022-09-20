@@ -23,12 +23,14 @@ Flag quiz is a site that challenges peoples flag skills as well as teaches them 
 * Name section 
   * In this part of the website the user will write their name for it to be displayed after the quiz.
   * When the name is written and the user clicks the button the actual quiz will start.
+  <img src="assets/images/name-section.png" alt="Enter name page">
 
 * Quiz section
   * Question count. On top of the page is a question count, this allows the user to see how far they have gotten in the quiz and when it ends.
   * The quiz question is displayed during the whole quiz.
   * The flag that the user has to guess which country it belongs to is displayed under the question.
   * Under the flag there is an input area and a submit button. This is where the user will write their answer and submit it. 
+  <img src="assets/images/quiz-section.png" alt="Quiz page">
 * Summary section 
   * Name display
   * In this section the amount of correct and incorrect points will be displayed, to let the user know how the quiz went.
