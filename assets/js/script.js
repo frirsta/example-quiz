@@ -11,18 +11,6 @@ window.onload = function () {
     scrollTo(0, 0);
 };
 
-/**
- * send viewer to name input area
- */
-function homeButton(event) {
-    event.preventDefault();
-    document.getElementById("username").value = "";
-    document.getElementById("username").focus();
-
-}
-let homePageButton = document.getElementById("start-quiz");
-homePageButton.addEventListener("click", homeButton);
-
 
 /**
  * Gets users name and displays it on screen
