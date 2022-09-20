@@ -44,6 +44,15 @@ function getSummaryPage() {
     summarySection.style.display = "flex";
 }
 
+function playAgainButtonEnter(event) {
+    event.preventDefault();
+    summarySection.style.display = "none";
+    flagSection.style.display = "flex";
+
+    document.getElementById("correct").innerText = "";
+    document.getElementById("incorrect").innerText = "";
+
+}
 
 /**
  * All flags name of country and letters to add to image
