@@ -14,7 +14,7 @@ window.onload = function () {
 /* 
 * start button goes to name section
 */
-function startButtonName(event){
+function startButtonEnter(event){
     event.preventDefault();
     startSection.style.display = "none";
     nameSection.style.display = "flex";
@@ -22,24 +22,46 @@ function startButtonName(event){
 let startButton = document.getElementById("start-buttton");
 addEventListener("click", startButtonName);
 
-
 /**
- * Gets users name and displays it on screen
- * it also alerts if name is not written
+ * Enter name button goes to quiz section
  */
-document.getElementById("name-button").addEventListener("click", function () {
+ function nameButtonEnter(event){
+    event.preventDefault();
     let inputName = document.getElementById("username").value;
 
     if (inputName === "") {
         alert("Enter your name!");
     } else {
+        nameSection.style.display = "none";
+        flagSection.style.display = "flex";
         document.getElementById("user-answer").value = "";
         document.getElementById("user-answer").focus();
         document.getElementById("name-display").innerHTML = `<h2>Go ${inputName}!</h2>`;
 
     }
 
-});
+}
+let nameButton = document.getElementById("name-buttton");
+addEventListener("click", nameButtonEnter);
+
+
+/**
+ * Gets users name and displays it on screen
+ * it also alerts if name is not written
+ */
+// document.getElementById("name-button").addEventListener("click", function () {
+//     let inputName = document.getElementById("username").value;
+
+//     if (inputName === "") {
+//         alert("Enter your name!");
+//     } else {
+//         document.getElementById("user-answer").value = "";
+//         document.getElementById("user-answer").focus();
+//         document.getElementById("name-display").innerHTML = `<h2>Go ${inputName}!</h2>`;
+
+//     }
+
+// });
 
 
 /**

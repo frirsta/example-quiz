@@ -36,7 +36,7 @@
                 <h2>How many flags of the world do you know? Test your skills with the Guess The Flag Quiz</h2>
                 <hp>You will be presented 15 random flags out of all the 254 world flags and have to write the country
                     it belongs too!</hp>
-                <button class="button" type="button" id="start-quiz" onclick="startButtonName(event)"
+                <button class="button" type="button" id="start-quiz" onclick="startButtonEnter(event)"
                     aria-label="Go to enter name page to start the quiz">Start Quiz</button>
             </div>
         </div>
@@ -46,7 +46,7 @@
             <div id="name-container">
                 <label class="labels" id="username-label" for="username">Enter name here!</label>
                 <input class="input" type="text" name="username" id="username">
-                <button class="button" type="button" id="name-button" aria-label="Submit name and start the quiz">Enter
+                <button class="button" type="button" id="name-button" onclick="nameButtonEnter(event)" aria-label="Submit name and start the quiz">Enter
                     Name</button>
 
             </div>
@@ -60,7 +60,7 @@
                     alt="A countries flag. Once your answer is submitted another flag will display.">
                 <label class="labels" for="user-answer">Enter Answer</label>
                 <input class="input" type="text" id="user-answer">
-                <button class="button" onclick="userAnswer()" id="submit-button"
+                <button class="button" id="submit-button"
                     aria-label="Submit the answer to see if it is correct or incorrect">Submit Answer</button>
             </div>
         </div>
