@@ -59,6 +59,12 @@ The icons8 is by [icon](https://icons8.com)
 
 The live link: https://frirsta.github.io/example-quiz/
 
+## Credits
+
+### Content
+* Flags https://flagpedia.net/
+* https://www.rawpixel.com/image/654277/free-image-rawpixel Image by rawpixel.com
+* https://www.w3resource.com/javascript/form/all-letters-field.php
 
 <!-- <p>
     <a href="http://jigsaw.w3.org/css-validator/check/referer">
