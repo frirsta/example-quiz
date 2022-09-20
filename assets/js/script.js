@@ -1117,6 +1117,7 @@ function userAnswer(event) {
         pointCounter();
 
     }
+    
     inputArea.value = "";
 }
 
@@ -1142,6 +1143,7 @@ function addIncorrectPoint() {
 function pointCounter() {
     let maxQuestions = Number(document.getElementById("correct").innerText) + Number(document.getElementById("incorrect").innerText);
     if (maxQuestions !== 15) {
+        document.getElementById("question-counter").innerText = maxQuestions + "/15";
         startQuiz();
     } else {
         alert('test: ditt spel är slut');
