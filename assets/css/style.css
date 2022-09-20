@@ -264,3 +264,26 @@ h3 {
 /* #points{
     
 } */
+
+/* for devices 600px wide and smaller */
+
+@media screen and (max-width: 600px) {
+    #logo{
+        font-size: 200%;
+        margin-bottom: 2%;
+    }
+
+    .labels{
+        font-size: 130%;
+    }
+
+    .button{
+        padding: 3%;
+        margin-top: 15%;
+    }
+
+    #name-outer{
+        width: 65%;
+        height: 70vh;
+    }
+}
