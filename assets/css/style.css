@@ -43,6 +43,10 @@ h3 {
     margin-top: 1%;
 }
 
+
+#hero-section{
+    display: none;
+}
 /* All sections */
 
 
@@ -77,8 +81,34 @@ h3 {
     bottom: 15%;
 } */
 
+/* Start game */
+
+
+#start-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#start-outer {
+    border: 2px solid rgb(29, 29, 213);
+    background: rgb(2 3 38);
+    border-radius: 50px;
+    width: 55%;
+    height: 70vh;
+    opacity: 0.95;
+}
+
+#start-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 /* hero button*/
-#start-quiz {}
+#start-button {}
 
 /* All buttons */
 
@@ -97,7 +127,7 @@ h3 {
 /* Name area */
 
 #name-section {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -115,7 +145,7 @@ h3 {
 
 #enter-name {
     height: 100%;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -151,7 +181,7 @@ h3 {
 /* Quiz outer */
 
 #flag-section {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -196,7 +226,7 @@ h3 {
 /* summary section */
 
 #summary-section {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -224,35 +254,6 @@ h3 {
     border-bottom: 2px solid #fff;
     margin: 5% 0;
     width: 100%;
-}
-
-
-
-
-
-/* Start game */
-
-
-#start-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#start-outer {
-    border: 2px solid rgb(29, 29, 213);
-    background: rgb(2 3 38);
-    border-radius: 50px;
-    width: 55%;
-    height: 70vh;
-    opacity: 0.95;
-}
-
-#start-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 

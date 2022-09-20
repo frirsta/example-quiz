@@ -18,7 +18,6 @@ window.onload = function () {
  */
 document.getElementById("name-button").addEventListener("click", function () {
     let inputName = document.getElementById("username").value;
-    let element = document.getElementById("flag-section");
 
     if (inputName === "") {
         alert("Enter your name!");
