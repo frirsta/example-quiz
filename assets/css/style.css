@@ -164,7 +164,7 @@ h3 {
 
 /* Quiz outer */
 
-#flag-quiz {
+#flag-section {
     height: auto;
     width: 100%;
     display: none;
@@ -173,7 +173,7 @@ h3 {
     align-items: center;
 }
 
-#flag-quiz h2 {
+#flag-section h2 {
     text-align: center;
     font-size: 100%;
 }
@@ -242,7 +242,7 @@ h3 {
 /* summary section */
 
 #summary-section {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -258,6 +258,31 @@ h3 {
 }
 
 #summary-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Start game */
+
+
+#start-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#start-outer {
+    border: 2px solid rgb(29, 29, 213);
+    background: rgb(2 3 38);
+    border-radius: 50px;
+    width: 55%;
+    height: 70vh;
+    opacity: 0.95;
+}
+
+#start-container {
     display: flex;
     flex-direction: column;
     align-items: center;

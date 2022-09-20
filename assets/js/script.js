@@ -1,6 +1,11 @@
 /**
  * when page is refreshed it starts from the top of the page
  */
+
+const startSection = document.getElementById("start-section");
+const nameSection = document.getElementById("name-section");
+const flagSection = document.getElementById("flag-section");
+const scoreSection = document.getElementById("score-section");
 window.onload = function () {
     scrollTo(0, 0);
 };
@@ -25,7 +30,7 @@ homePageButton.addEventListener("click", homeButton);
  */
 document.getElementById("name-button").addEventListener("click", function () {
     let inputName = document.getElementById("username").value;
-    let element = document.getElementById("flag-quiz");
+    let element = document.getElementById("flag-section");
 
     if (inputName === "") {
         alert("Enter your name!");
