@@ -22,10 +22,16 @@ function startButtonEnter(event) {
 function nameButtonEnter(event) {
     event.preventDefault();
     let inputName = document.getElementById("username").value;
+    let inputNameArea = document.getElementById("username");
+    let letters = /^[A-Za-z]+$/;
 
     if (inputName === "") {
         alert("Enter your name!");
-    } else {
+    } else if(inputName != inputName.match(letters)){
+        alert("Your name can only include letters and spaces");
+        inputNameArea.value = "";
+        inputNameArea.focus();
+       } else {
         nameSection.style.display = "none";
         flagSection.style.display = "flex";
         document.getElementById("user-answer").value = "";
@@ -1103,10 +1109,13 @@ function startQuiz() {
  */
 function userAnswer(event) {
     event.preventDefault()
+    let letters = /^[A-Za-z]+$/;
     let inputAnswer = document.getElementById("user-answer").value.toLowerCase().trim();
     let inputArea = document.getElementById("user-answer");
     if (inputAnswer === "") {
         alert("You have to write your guess before moving on to the next flag");
+    } else if(inputAnswer != inputAnswer.match(letters)){
+     alert("Your answer can only include letters")
     } else if (inputAnswer == flagData.pair[flagData.flag].country.toLowerCase()) {
         alert(`${inputAnswer} is the correct answer!`);
         addPoint();
