@@ -1,19 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300&display=swap');
 
 
 * {
     color: #ffffff;
-    font-family: 'Playfair Display SC', serif;
+    font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     border: none;
-    font-weight: lighter;
+    font-weight: 300;
+    letter-spacing: 3px;
 
 }
 
 body {
-    font-family: 'Playfair Display SC', serif;
+    font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
     color: #ffffff;
     background: url("../images/hero.jpg") no-repeat center center;
@@ -26,11 +27,12 @@ h3 {
     font-size: 130%;
     text-align: left;
 
+
 }
 
 .logo {
     text-decoration: none;
-    font-weight: 100;
+
     letter-spacing: 3px;
 }
 
@@ -70,7 +72,7 @@ h3 {
 
 }
 
-#start-container p{
+#start-container p {
     font-size: 130%;
 }
 
@@ -181,7 +183,7 @@ h3 {
     justify-content: space-between;
     width: 50%;
     padding: 1%;
-    
+
 }
 
 #flag-image {
@@ -193,7 +195,7 @@ h3 {
 
 #user-answer {
     padding: 1%;
-    
+
 }
 
 /* #submit-button {} */
