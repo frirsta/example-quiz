@@ -309,6 +309,11 @@ h3 {
         width: 65%;
     }
 
+    #points{
+        width: unset;
+        margin-top: 3%;
+    }
+
     #flag-image {
         height: unset;
         width: 70%;
