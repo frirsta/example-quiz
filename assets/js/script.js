@@ -1103,7 +1103,7 @@ function startQuiz() {
  */
 function userAnswer(event) {
     event.preventDefault()
-    let inputAnswer = document.getElementById("user-answer").value.toLowerCase();
+    let inputAnswer = document.getElementById("user-answer").value.toLowerCase().trim();
     let inputArea = document.getElementById("user-answer");
     if (inputAnswer === "") {
         alert("You have to write your guess before moving on to the next flag");
@@ -1147,6 +1147,7 @@ function pointCounter() {
         startQuiz();
     } else {
         alert('test: ditt spel är slut');
+        document.getElementById("question-counter").innerText = "0/15"
         getSummaryPage();
     }
     console.log(maxQuestions);
