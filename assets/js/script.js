@@ -1,6 +1,3 @@
-/**
- * when page is refreshed it starts from the top of the page
- */
 
 const startSection = document.getElementById("start-section");
 const nameSection = document.getElementById("name-section");
@@ -21,6 +18,7 @@ function startButtonEnter(event) {
  */
 function nameButtonEnter(event) {
     event.preventDefault();
+    
     let inputName = document.getElementById("username").value;
     let inputNameArea = document.getElementById("username");
     let letters = /^[A-Za-z]+$/;
@@ -36,9 +34,10 @@ function nameButtonEnter(event) {
         flagSection.style.display = "flex";
         document.getElementById("user-answer").value = "";
         document.getElementById("user-answer").focus();
+    
         document.getElementById("name-display").innerHTML = `<h3>${inputName}, this is your result:</h3>`;
-
     }
+    
 
 }
 /* 
@@ -57,7 +56,7 @@ function playAgainButtonEnter(event) {
 
     document.getElementById("correct").innerText = "";
     document.getElementById("incorrect").innerText = "";
-
+    startQuiz();
 }
 
 /**
@@ -1082,7 +1081,7 @@ const flagData = {
         {
             imgCode: "zw",
             country: "Zimbabwe"
-        }
+        },
     ]
 };
 
@@ -1186,12 +1185,3 @@ userInput.addEventListener("keypress", function (event) {
     }
 });
 
-function correctAnswer() {
-    let inputArea = document.getElementById("user-answer");
-    inputArea.style.backgroundColor = "green";
-}
-
-function incorrectAnswer() {
-    let inputArea = document.getElementById("user-answer");
-    inputArea.style.backgroundColor = "green";
-}

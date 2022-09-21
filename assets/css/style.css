@@ -91,7 +91,7 @@ h3 {
     padding: 2%;
     letter-spacing: 3px;
     margin: 1%;
-    
+
 }
 
 /* Name area */
@@ -235,7 +235,7 @@ h3 {
 
 #name-display {
     width: 100%;
-    
+
     font-size: 100%;
 }
 
@@ -335,9 +335,7 @@ h3 {
         font-size: 150%;
     }
 
-    #name-display {
-     
-    }
+    #name-display {}
 
     #result {
         width: 100%;
@@ -376,7 +374,7 @@ h3 {
     }
 
     #start-container {
-        padding: 20% 5%;
+        padding-top: 10%;
 
     }
 
@@ -394,7 +392,7 @@ h3 {
 
     .button {
         padding: 5%;
-        margin-top: 15%;
+        margin: 10%;
         font-size: 80%;
     }
 
@@ -407,7 +405,7 @@ h3 {
         font-size: 80%;
         font-weight: 300;
         letter-spacing: 0px;
-        padding: 15% 10%;
+        padding: 5%;
         text-align: center;
     }
 
@@ -416,15 +414,19 @@ h3 {
         width: 65%;
     }
 
+    #quiz-container {
+        justify-content: center;
+    }
+
     #points {
-       
+
         margin-top: 3%;
     }
 
     #flag-image {
         max-height: 15vh;
         width: 70%;
-        margin-bottom: 15%;
+        margin-bottom: 1%;
     }
 
     #summary-outer {
@@ -437,7 +439,7 @@ h3 {
     }
 
     #name-display {
-        
+
         display: flex;
         flex-direction: column;
         align-items: center;

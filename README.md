@@ -35,6 +35,9 @@ Flag quiz is a site that challenges peoples flag skills as well as teaches them 
   * Name display
   * In this section the amount of correct and incorrect points will be displayed, to let the user know how the quiz went.
   * Under the result score is a play again button, which lets the user play the quiz again.
+
+  <img src="assets/images/result-section.png" alt="Result page">
+
   ---
 
 ### Features Left to Implement 
