@@ -133,6 +133,7 @@ h3 {
 .labels {
     font-size: 150%;
     letter-spacing: 3px;
+    margin-top: 1%;
 }
 
 .input {
@@ -183,7 +184,6 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 50%;
     padding: 1%;
 
 }
@@ -234,14 +234,14 @@ h3 {
 
 
 #name-display {
-    width: 50%;
-    border-bottom: 2px solid #fff;
+    width: 100%;
+    
     font-size: 100%;
 }
 
 #result {
     font-size: 150%;
-    width: 50%;
+    width: 100%;
 }
 
 .summary-score {
@@ -336,8 +336,7 @@ h3 {
     }
 
     #name-display {
-        width: 100%;
-        border: none;
+     
     }
 
     #result {
@@ -350,9 +349,7 @@ h3 {
     }
 
 
-    #points {
-        width: unset;
-    }
+
 }
 
 /* for devices 600px wide and smaller */
@@ -420,7 +417,7 @@ h3 {
     }
 
     #points {
-        width: unset;
+       
         margin-top: 3%;
     }
 
@@ -440,7 +437,7 @@ h3 {
     }
 
     #name-display {
-        width: 100%;
+        
         display: flex;
         flex-direction: column;
         align-items: center;
