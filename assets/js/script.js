@@ -36,7 +36,7 @@ function nameButtonEnter(event) {
         flagSection.style.display = "flex";
         document.getElementById("user-answer").value = "";
         document.getElementById("user-answer").focus();
-        document.getElementById("name-display").innerHTML = `<h2>Go ${inputName}!</h2>`;
+        document.getElementById("name-display").innerHTML = `<h3>${inputName}, this is your result:</h3>`;
 
     }
 
@@ -1098,6 +1098,7 @@ function startQuiz() {
     flagData.flag = Math.floor(Math.random() * flagData.pair.length);
     document.getElementById("flag-image").src = "https://flagcdn.com/w640/" + flagData.pair[flagData.flag].imgCode + ".png";
     flagResult = document.getElementById("flag-result").innerText = flagData.pair[flagData.flag].country;
+    let flagresultResult = flagResult.replaceAll("\\W+","");
 }
 
 

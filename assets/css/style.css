@@ -229,16 +229,27 @@ h3 {
     align-items: center;
     height: 100%;
     justify-content: space-between;
+    padding: 5%;
 }
 
-/* #name-display {} */
 
-
-.scores {
+#name-display{
+    width: 50%;
     border-bottom: 2px solid #fff;
-    margin: 5% 0;
-    width: 100%;
+    font-size: 100%;
 }
+
+#result{
+    font-size: 150%;
+    width: 50%;
+}
+
+.summary-score{
+    margin: 5% 0;
+    border-bottom: 2px solid #fff;
+    
+}
+
 
 
 /* footer */
