@@ -12,6 +12,8 @@ function startButtonEnter(event) {
     event.preventDefault();
     startSection.style.display = "none";
     nameSection.style.display = "flex";
+    document.getElementById("username").value = "";
+    document.getElementById("username").focus();
     startQuiz();
 }
 /**
@@ -59,6 +61,17 @@ function playAgainButtonEnter(event) {
     document.getElementById("correct").innerText = "";
     document.getElementById("incorrect").innerText = "";
     startQuiz();
+}
+
+/**
+ * 
+ * Button to go to home page from summary section 
+ */
+function homePageEnter(event){
+event.preventDefault();
+summarySection.style.display = "none";
+startSection.style.display = "flex";
+
 }
 
 
