@@ -1097,8 +1097,8 @@ let flagResult = "";
 function startQuiz() {
     flagData.flag = Math.floor(Math.random() * flagData.pair.length);
     document.getElementById("flag-image").src = "https://flagcdn.com/w640/" + flagData.pair[flagData.flag].imgCode + ".png";
-    flagResult = document.getElementById("flag-result").innerText = flagData.pair[flagData.flag].country;
-    let flagresultResult = flagResult.replaceAll("\\W+","");
+    flagResult = document.getElementById("flag-result").innerText = flagData.pair[flagData.flag].country.replace(/\(|\)/g, '');
+    flagResult.trim();
 }
 
 
@@ -1110,7 +1110,7 @@ function startQuiz() {
  */
 function userAnswer(event) {
     event.preventDefault()
-    let letters = /^[A-Za-z]+$/;
+    let letters = /^[A-Za-z\s]+$/;
     let inputAnswer = document.getElementById("user-answer").value.toLowerCase().trim();
     let inputArea = document.getElementById("user-answer");
     if (inputAnswer === "") {
@@ -1187,11 +1187,11 @@ userInput.addEventListener("keypress", function (event) {
 });
 
 function correctAnswer() {
-let inputArea = document.getElementById("user-answer");
-inputArea.style.backgroundColor = "green";
+    let inputArea = document.getElementById("user-answer");
+    inputArea.style.backgroundColor = "green";
 }
 
 function incorrectAnswer() {
-let inputArea = document.getElementById("user-answer");
-inputArea.style.backgroundColor = "green";
+    let inputArea = document.getElementById("user-answer");
+    inputArea.style.backgroundColor = "green";
 }
