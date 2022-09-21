@@ -215,6 +215,16 @@ h3 {
     margin: 5% 0;
     border-bottom: 2px solid #fff;
 }
+#buttons{
+    text-align: center;
+}
+
+#play-again-button{
+    margin-top: 10%;
+}
+#home-page-button{
+    margin-top: 10%;
+}
 
 /* for devices 768px wide and wider */
 @media screen and (max-width: 992px) {
