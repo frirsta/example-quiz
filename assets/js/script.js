@@ -1096,7 +1096,7 @@ let flagResult = "";
  */
 function startQuiz() {
     flagData.flag = Math.floor(Math.random() * flagData.pair.length);
-    document.getElementById("flag-image").src = "https://flagcdn.com/w640/" + flagData.pair[flagData.flag].imgCode + ".png";
+    document.getElementById("flag-image").src = "https://flagcdn.com/w2560/" + flagData.pair[flagData.flag].imgCode + ".png";
     flagResult = document.getElementById("flag-result").innerText = flagData.pair[flagData.flag].country.replace(/\(|\)/g, '');
     flagResult.trim();
 }
