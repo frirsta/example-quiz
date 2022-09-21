@@ -281,6 +281,11 @@ h3 {
 /* for devices 600px wide and smaller */
 
 @media screen and (max-width: 600px) {
+
+    h2, h3 {
+        letter-spacing: 2px;
+        font-size: 95%;
+    }
     #logo {
         font-size: 200%;
         margin-bottom: 2%;
@@ -293,13 +298,26 @@ h3 {
         font-size: 80%;
         padding: 2%;
     }
+    
+    #start-container{
+        padding: 20% 5%;
+       
+    }
+
+    #start-container p {
+        letter-spacing: 2px;
+        font-size: 100%;
+
+    }
 
     .labels {
-        font-size: 120%;
+        font-size: 90%;
+        text-align: center;
+        letter-spacing: 1px;
     }
 
     .button {
-        padding: 3%;
+        padding: 5%;
         margin-top: 15%;
         font-size: 80%;
     }
@@ -336,11 +354,10 @@ h3 {
     #summary-outer {
         height: 65vh;
         width: 65%;
-        padding: 10%;
     }
 
     #summary-container {
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     #name-display {
@@ -348,5 +365,11 @@ h3 {
         display: flex;
         flex-direction: column;
         align-items: center;
+        font-size: 90%;
+    }
+
+    #result {
+        font-size: 100%;
+        width: 100%;
     }
 }
