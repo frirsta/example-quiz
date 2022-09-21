@@ -128,7 +128,7 @@ function pointCounter() {
         startQuiz();
     } else {
         alert('That was the last flag!');
-        document.getElementById("question-counter").innerText = "0/15"
+        document.getElementById("question-counter").innerText = "0/15";
         getSummaryPage();
     }
     console.log(maxQuestions);
