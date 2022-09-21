@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300&display=swap');
+
 * {
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
@@ -7,14 +8,16 @@
     margin: 0;
     border: none;
     font-weight: 300;
-    letter-spacing: 3px;   
+    letter-spacing: 3px;
 }
+
 body {
     font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
     color: #ffffff;
     background: url("../images/hero.jpg") no-repeat center center;
 }
+
 h2,
 h3 {
     letter-spacing: 3px;
@@ -22,6 +25,7 @@ h3 {
     font-size: 130%;
     text-align: left;
 }
+
 /* All buttons */
 .button {
     border: solid #fff;
@@ -34,17 +38,20 @@ h3 {
     letter-spacing: 3px;
     margin: 1%;
 }
+
 /* logo */
 .logo {
     text-decoration: none;
     letter-spacing: 3px;
 }
+
 #logo {
     font-size: 300%;
     margin-left: 2%;
     margin-top: 1%;
     margin-bottom: 1%;
 }
+
 /* Start section */
 #start-section {
     display: flex;
@@ -52,6 +59,7 @@ h3 {
     justify-content: center;
     align-items: center;
 }
+
 #start-outer {
     border: 2px solid rgb(29, 29, 213);
     background: rgb(2 3 38);
@@ -60,6 +68,7 @@ h3 {
     height: 70vh;
     opacity: 0.95;
 }
+
 #start-container {
     display: flex;
     flex-direction: column;
@@ -68,17 +77,20 @@ h3 {
     padding: 5%;
     height: 100%;
 }
+
 #start-container p {
     font-size: 130%;
 }
+
 /* Name area */
 #name-section {
     display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
+
 #name-outer {
     border: 2px solid rgb(29, 29, 213);
     background: rgb(2 3 38);
@@ -87,6 +99,7 @@ h3 {
     height: 70vh;
     opacity: 0.95;
 }
+
 #name-container {
     height: 100%;
     display: flex;
@@ -94,22 +107,26 @@ h3 {
     align-items: center;
     justify-content: center;
 }
+
 /* name and quiz labels and input */
 .labels {
     font-size: 150%;
     letter-spacing: 3px;
     margin-top: 1%;
 }
+
 .input {
     width: 90%;
     height: 10%;
     border-bottom: 2px solid #fff;
     background-color: transparent;
 }
+
 .input:focus {
     border: 3px solid #fff;
     background-color: transparent;
 }
+
 /*quiz flag section*/
 #quiz-section {
     display: none;
@@ -119,10 +136,12 @@ h3 {
     height: auto;
     width: 100%;
 }
+
 #quiz-section h2 {
     text-align: center;
     font-size: 100%;
 }
+
 #quiz-outer {
     border: 2px solid rgb(29, 29, 213);
     background: rgb(2 3 38);
@@ -131,24 +150,22 @@ h3 {
     height: 70vh;
     opacity: 0.95;
 }
+
 #quiz-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#points {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1%;
-}
+
 #flag-image {
     height: 30vh;
     width: 30vw;
 }
+
 #user-answer {
     padding: 1%;
 }
+
 /* summary section */
 #summary-section {
     display: none;
@@ -156,6 +173,7 @@ h3 {
     justify-content: center;
     align-items: center;
 }
+
 #summary-outer {
     border: 2px solid rgb(29, 29, 213);
     background: rgb(2 3 38);
@@ -164,6 +182,7 @@ h3 {
     height: 70vh;
     opacity: 0.95;
 }
+
 #summary-container {
     width: 100%;
     display: flex;
@@ -173,101 +192,139 @@ h3 {
     justify-content: space-between;
     padding: 5%;
 }
+
 #name-display {
     width: 100%;
     font-size: 100%;
 }
+
 #result {
     font-size: 150%;
     width: 100%;
 }
+
+#points {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1%;
+}
+
 .summary-score {
     margin: 5% 0;
     border-bottom: 2px solid #fff;
 }
+
 /* for devices 768px wide and wider */
 @media screen and (max-width: 992px) {
+
     h2,
     h3 {
         letter-spacing: 2px;
         font-size: 95%;
     }
+
+    /*start section*/
     #start-section {
         height: 100vh;
     }
+
     #start-outer {
         width: 75%;
         height: 40vh;
     }
+
     #start-container p {
         font-size: unset;
     }
+
+    /* name section */
     #name-section {
         height: 100vh;
     }
-    #name-outer {   
+
+    #name-outer {
         width: 75%;
         height: 40vh;
     }
+
+    /* quiz section */
     #quiz-section {
         height: 100vh;
     }
+
     #quiz-outer {
         width: 75%;
-        height: 40vh;   
+        height: 40vh;
     }
+
     #quiz-container {
         font-size: 100%;
         height: 100%;
         justify-content: space-evenly;
     }
+
     #flag-image {
         height: 15vh;
         width: 40vw;
     }
+
+    /* summary section */
     #summary-section {
         height: 100vh;
     }
+
     #summary-outer {
         width: 75%;
         height: 40vh;
     }
+
     #summary-container {
         font-size: 90%;
     }
+
     #summary-container h3 {
         font-size: 150%;
     }
+
     #result {
         width: 100%;
         font-size: 150%;
     }
+
+    /* button */
     .button {
         padding: 3%;
     }
 }
+
 /* for devices 600px wide and smaller */
 @media screen and (max-width: 600px) {
+
     h2,
     h3 {
         letter-spacing: 2px;
         font-size: 95%;
     }
+
     #logo {
         font-size: 200%;
         margin-bottom: 2%;
     }
+
     /* button and label */
     .labels {
         font-size: 90%;
         text-align: center;
         letter-spacing: 1px;
     }
+
     .button {
         padding: 5%;
         margin: 10%;
         font-size: 80%;
     }
+
     /* Start section */
     #start-outer {
         height: 65vh;
@@ -276,19 +333,23 @@ h3 {
         font-size: 80%;
         padding: 2%;
     }
+
     #start-container {
         padding-top: 10%;
     }
+
     #start-container p {
         letter-spacing: 2px;
         font-size: 100%;
     }
+
     /* Name section */
     #name-outer {
         height: 65vh;
         width: 65%;
     }
-    /* Flag section section */
+
+    /* quiz section */
     #question-area {
         font-size: 80%;
         font-weight: 300;
@@ -296,45 +357,57 @@ h3 {
         padding: 5%;
         text-align: center;
     }
+
     #quiz-outer {
         height: 65vh;
         width: 65%;
     }
+
     #quiz-container {
         justify-content: center;
     }
+
     #flag-image {
         max-height: 15vh;
         width: 70%;
         margin-bottom: 1%;
     }
+
     /* Summary section */
     #summary-outer {
         height: 65vh;
         width: 65%;
     }
+
     #summary-container {
         justify-content: space-evenly;
     }
+
     #name-display {
         display: flex;
         flex-direction: column;
         align-items: center;
         font-size: 90%;
     }
+
     #result {
         font-size: 100%;
         width: 100%;
     }
+
     #points {
         margin-top: 3%;
     }
+
+    /* buttons */
     #buttons {
         text-align: center;
     }
+
     #play-again-button {
         margin: 5%;
     }
+
     #home-page-button {
         margin: 5%;
     }

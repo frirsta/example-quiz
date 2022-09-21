@@ -46,7 +46,6 @@ function getSummaryPage() {
     summarySection.style.display = "flex";
 }
 /**
- * 
  * play again button from summary page
  */
 function playAgainButtonEnter(event) {
@@ -58,7 +57,6 @@ function playAgainButtonEnter(event) {
     startQuiz();
 }
 /**
- * 
  * Button to go to home page from summary section 
  */
 function homePageEnter(event) {
@@ -67,7 +65,7 @@ function homePageEnter(event) {
     startSection.style.display = "flex";
 }
 /**
- * Result will be stores in flagResult variable
+ * Result will be stored in flagResult variable
  */
 let flagResult = "";
 /**
