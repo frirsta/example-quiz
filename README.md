@@ -47,6 +47,34 @@ The globe favicon is from [favicon](https://icons8.com/icon/63766/globe")
 The icons8 is by [icon](https://icons8.com)
 ## Testing 
 ---
+* HTML
+<img src="assets/images/html-validator.png" alt="Result page">
+https://validator.w3.org/
+https://jigsaw.w3.org/css-validator/
+
+
+* CSS
+<img src="assets/images/css-validator.png" alt="CSS validator confirmation">
+<img src="assets/images/css-validator-google.png" alt="CSS validator confirmation without google font">
+  <p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+        
+<p>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+    </a>
+</p>
+
+* JavaScript
+<img src="#" alt="Result page">
+https://jshint.com/
 
 * HTML
 * CSS
