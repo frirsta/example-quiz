@@ -1,4 +1,3 @@
-
 const startSection = document.getElementById("start-section");
 const nameSection = document.getElementById("name-section");
 const flagSection = document.getElementById("flag-section");
@@ -14,6 +13,8 @@ function startButtonEnter(event) {
     nameSection.style.display = "flex";
     document.getElementById("username").value = "";
     document.getElementById("username").focus();
+    document.getElementById("correct").innerText = "";
+    document.getElementById("incorrect").innerText = "";
     startQuiz();
 }
 /**
@@ -21,7 +22,7 @@ function startButtonEnter(event) {
  */
 function nameButtonEnter(event) {
     event.preventDefault();
-    
+
     let inputName = document.getElementById("username").value;
     let inputNameArea = document.getElementById("username");
     let letters = /^[A-Za-z]+$/;
@@ -33,15 +34,16 @@ function nameButtonEnter(event) {
         inputNameArea.value = "";
         inputNameArea.focus();
     } else {
-        
+
         nameSection.style.display = "none";
         flagSection.style.display = "flex";
+
         document.getElementById("user-answer").value = "";
         document.getElementById("user-answer").focus();
-    
+
         document.getElementById("name-display").innerHTML = `<h3>${inputName}, this is your result:</h3>`;
     }
-    
+
 
 }
 /* 
@@ -67,11 +69,10 @@ function playAgainButtonEnter(event) {
  * 
  * Button to go to home page from summary section 
  */
-function homePageEnter(event){
-event.preventDefault();
-summarySection.style.display = "none";
-startSection.style.display = "flex";
-
+function homePageEnter(event) {
+    event.preventDefault();
+    summarySection.style.display = "none";
+    startSection.style.display = "flex";
 }
 
 
@@ -148,7 +149,7 @@ function pointCounter() {
         document.getElementById("question-counter").innerText = maxQuestions + "/15";
         startQuiz();
     } else {
-        alert('test: ditt spel är slut');
+        alert('That was the last flag!');
         document.getElementById("question-counter").innerText = "0/15"
         getSummaryPage();
     }
@@ -175,4 +176,3 @@ userInput.addEventListener("keypress", function (event) {
         document.getElementById("submit-button").click();
     }
 });
-

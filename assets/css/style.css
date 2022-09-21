@@ -407,6 +407,16 @@ h3 {
         font-size: 80%;
     }
 
+    #buttons{
+        text-align: center;
+    }
+    #play-again-button{
+        margin: 5%;
+    }
+    #home-page-button{
+        margin: 5%;
+    }
+
     #name-outer {
         height: 65vh;
         width: 65%;
