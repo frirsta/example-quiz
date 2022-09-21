@@ -277,6 +277,18 @@ h3 {
 /* for devices 768px wide and wider */
 @media screen and (max-width: 992px) {
 
+    #start-section{
+        height: 100vh;
+    }
+    #name-section{
+        height: 100vh;
+    }
+    #quiz-section{
+        height: 100vh;
+    }
+    #summary-section{
+        height: 100vh;
+    }
     h2,
     h3 {
         letter-spacing: 2px;
