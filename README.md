@@ -109,6 +109,12 @@ You can learn more about [DevTool](https://developer.chrome.com/docs/devtools/)
 
 ---
 
+## Design
+---
+### wireframes
+<img src="assets/images/readme/phone-drawing.jpeg" alt="Phone drawing">
+<img src="assets/images/readme/desktop-drawing.jpeg" alt="Desktop drawing">
+<img src="assets/images/readme/desktop-drawing-one.jpeg" alt="Desktop drawing">
 
 ## Unfixed bugs
 
