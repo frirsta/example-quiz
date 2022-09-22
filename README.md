@@ -3,7 +3,7 @@
 Flag quiz is a site that challenges peoples flag skills as well as teaches them what flag belongs to what countries in a fun way. The quiz has all 254 countries flags. Therefore, this is an advanced quiz. The website will be targeted by students who have to learn what country all flags belong to and those who are looking to challenge their flag skills.
 
 ---
-
+<img src="assets/images/readme/all-devices.png" alt="Guess the flag Website on all devices">
 
 <!-- Photo of devices -->
 
@@ -19,58 +19,61 @@ Flag quiz is a site that challenges peoples flag skills as well as teaches them 
   * This section introduces the user to to the Flag Quiz with an image of flags from different countries being held my people to let the user know this is a "Flag" quiz before reading the text. Which will give the impression that they are on the website they are looking for, before reading the text saying its a world flag quiz.
   * There is also the text of the rules on the first page to allow the user to understand how the quiz works.
   * The landing page also has a button that sends the user to the name section of the page so they can start the quiz.
+  <img src="assets/images/readme/start-section.png" alt="Landing page">
 
 * Name section 
   * In this part of the website the user will write their name for it to be displayed after the quiz.
   * When the name is written and the user clicks the button the actual quiz will start.
-  <img src="assets/images/name-section.png" alt="Enter name page">
+  <img src="assets/images/readme/name-section.png" alt="Enter name page">
 
 * Quiz section
   * Question count. On top of the page is a question count, this allows the user to see how far they have gotten in the quiz and when it ends.
   * The quiz question is displayed during the whole quiz.
   * The flag that the user has to guess which country it belongs to is displayed under the question.
   * Under the flag there is an input area and a submit button. This is where the user will write their answer and submit it. 
-  <img src="assets/images/quiz-section.png" alt="Quiz page">
+  <img src="assets/images/readme/quiz-section.png" alt="Quiz page">
 * Summary section 
   * Name display
   * In this section the amount of correct and incorrect points will be displayed, to let the user know how the quiz went.
   * Under the result score is a play again button, which lets the user play the quiz again.
 
-  <img src="assets/images/result-section.png" alt="Result page">
+  <img src="assets/images/readme/summary-section.png" alt="Result page">
 
   ---
 
 ### Features Left to Implement 
-* footer
+
 
 The globe favicon is from [favicon](https://icons8.com/icon/63766/globe")
 The icons8 is by [icon](https://icons8.com)
 ## Testing 
 ---
 * HTML
-<img src="assets/images/html-validator.png" alt="Result page">
+<img src="assets/images/readme/html-validator.png" alt="Result page">
 https://validator.w3.org/
 https://jigsaw.w3.org/css-validator/
 
 
 * CSS
-<img src="assets/images/css-validator.png" alt="CSS validator confirmation">
-<img src="assets/images/css-validator-google.png" alt="CSS validator confirmation without google font">
-  <p>
-    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+<img src="assets/images/readme/css-validator.png" alt="CSS validator confirmation">
+
+
+<p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"
-            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            src="https://jigsaw.w3.org/css-validator/images/vcss"
             alt="Valid CSS!" />
     </a>
 </p>
         
 <p>
-<a href="http://jigsaw.w3.org/css-validator/check/referer">
-    <img style="border:0;width:88px;height:31px"
-        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-        alt="Valid CSS!" />
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="Valid CSS!" />
     </a>
 </p>
+    
 
 * JavaScript
 <img src="#" alt="Result page">
@@ -79,6 +82,22 @@ https://jshint.com/
 * HTML
 * CSS
 * JavaScript
+
+### Responsive tests
+
+
+
+### LIGHTHOUSE
+The website has also been tested with the Chrome developer tool Google Lighthouse. It has been tested for desktop and for mobile. What was tested:
+*  Performance
+*  Accessibility
+*  Best Practices
+*  SEO (Search engine optimisation)
+
+You can learn more about [DevTool](https://developer.chrome.com/docs/devtools/)
+<img src="assets/images/readme/lighthouse-desktop.png" alt="lighthouse validator for desktop">
+<img src="assets/images/readme/lighthouse-mobile.png" alt="lighthouse validator for desktop">
+
 
 
 ## Unfixed bugs
@@ -95,24 +114,9 @@ The live link: https://frirsta.github.io/example-quiz/
 ## Credits
 
 ### Content
-* Flags https://flagpedia.net/
-* https://www.rawpixel.com/image/654277/free-image-rawpixel Image by rawpixel.com
-* https://www.w3resource.com/javascript/form/all-letters-field.php
+* The flag images are links from https://flagpedia.net/
+* The background image is from [RawPixel](https://www.rawpixel.com/image/654277/free-image-rawpixel)
+  * Image by rawpixel.com
+* [w3resource](https://www.w3resource.com/javascript/form/all-letters-field.php)
+  * I used this website to find out how to only look for letters in JavaScripy. 
 
-<!-- <p>
-    <a href="http://jigsaw.w3.org/css-validator/check/referer">
-        <img style="border:0;width:88px;height:31px"
-            src="http://jigsaw.w3.org/css-validator/images/vcss"
-            alt="Valid CSS!" />
-    </a>
-</p>
-            
-Valid CSS!
-<p>
-<a href="http://jigsaw.w3.org/css-validator/check/referer">
-    <img style="border:0;width:88px;height:31px"
-        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-        alt="Valid CSS!" />
-    </a>
-</p>
-        -->
