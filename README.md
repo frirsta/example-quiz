@@ -94,7 +94,7 @@ https://jshint.com/
 
 ### Responsive tests
 
-
+The responsive tests were by https://www.responsivedesignchecker.com/ and no errors were found.
 
 ### Lighthouse
 The website has also been tested with the Chrome developer tool Google Lighthouse. It has been tested for desktop and for mobile. What was tested:
@@ -107,7 +107,6 @@ You can learn more about [DevTool](https://developer.chrome.com/docs/devtools/)
 <img src="assets/images/readme/lighthouse-desktop.png" alt="lighthouse validator for desktop">
 <img src="assets/images/readme/lighthouse-mobile.png" alt="lighthouse validator for desktop">
 
----
 
 ## Design
 ---
@@ -116,7 +115,6 @@ You can learn more about [DevTool](https://developer.chrome.com/docs/devtools/)
 <img src="assets/images/readme/desktop-drawing.jpeg" alt="Desktop drawing">
 <img src="assets/images/readme/desktop-drawing-one.jpeg" alt="Desktop drawing">
 
-## Unfixed bugs
 
 ## Deployment
 ---
