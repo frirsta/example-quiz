@@ -83,14 +83,14 @@ function startQuiz() {
  * after the alert a new flag will display.
  */
 function userAnswer(event) {
-    event.preventDefault()
+    event.preventDefault();
     let letters = /^[A-Za-z\s]+$/;
     let inputAnswer = document.getElementById("user-answer").value.toLowerCase().trim();
     let inputArea = document.getElementById("user-answer");
     if (inputAnswer === "") {
         alert("You have to write your guess before moving on to the next flag");
     } else if (inputAnswer != inputAnswer.match(letters)) {
-        alert("Your answer can only include letters")
+        alert("Your answer can only include letters");
     } else if (inputAnswer == flagData.pair[flagData.flag].country.toLowerCase()) {
         alert(`${inputAnswer} is the correct answer!`);
         addPoint();
